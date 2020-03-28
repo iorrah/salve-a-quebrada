@@ -1,28 +1,57 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
-import A from './A';
+import Hero01 from 'images/hero-01.png';
+import Hero02 from 'images/hero-02.png';
+import Hero03 from 'images/hero-03.png';
+import Hero04 from 'images/hero-04.png';
+
+import 'styles.scss';
+
 import Img from './Img';
 import NavBar from './NavBar';
 import HeaderLink from './HeaderLink';
-import Banner from './banner.jpg';
-import messages from './messages';
+
+const settings = {
+  dots: false,
+  infinite: true,
+  speed: 1000,
+  autoplaySpeed: 5000,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  fade: true,
+};
 
 function Header() {
   return (
-    <div>
-      <A href="https://www.reactboilerplate.com/">
-        <Img src={Banner} alt="react-boilerplate - Logo" />
-      </A>
+    <header className="danger">
+      <Slider {...settings}>
+        <div>
+          <Img src={Hero01} alt="Imagem Restaurante Vazio 01" />
+        </div>
+
+        <div>
+          <Img src={Hero02} alt="Imagem Restaurante Vazio 02" />
+        </div>
+
+        <div>
+          <Img src={Hero03} alt="Imagem Restaurante Vazio 03" />
+        </div>
+
+        <div>
+          <Img src={Hero04} alt="Imagem Restaurante Vazio 04" />
+        </div>
+      </Slider>
+
       <NavBar>
-        <HeaderLink to="/">
-          <FormattedMessage {...messages.home} />
-        </HeaderLink>
-        <HeaderLink to="/features">
-          <FormattedMessage {...messages.features} />
-        </HeaderLink>
+        <HeaderLink to="/">Salve a Quebrada</HeaderLink>
+        <HeaderLink to="/">Como funciona?</HeaderLink>
+        <HeaderLink to="/">Adicionar Local</HeaderLink>
       </NavBar>
-    </div>
+    </header>
   );
 }
 

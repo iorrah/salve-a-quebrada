@@ -1,7 +1,7 @@
 {
   "name": "salve-a-quebrada",
   "version": "4.0.0",
-  "description": "A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices",
+  "description": "",
   "repository": {
     "type": "git",
     "url": "git://github.com/salve-a-quebrada/salve-a-quebrada.git"
@@ -86,10 +86,12 @@
     "react-intl": "2.8.0",
     "react-redux": "7.0.2",
     "react-router-dom": "5.0.0",
+    "react-slick": "^0.25.2",
     "redux": "4.0.1",
     "redux-saga": "1.0.2",
     "reselect": "4.0.0",
     "sanitize.css": "8.0.0",
+    "slick-carousel": "^1.8.1",
     "styled-components": "4.2.0"
   },
   "devDependencies": {
@@ -139,6 +141,7 @@
     "lint-staged": "8.1.5",
     "ngrok": "3.1.1",
     "node-plop": "0.18.0",
+    "node-sass": "^4.13.1",
     "null-loader": "0.1.1",
     "offline-plugin": "5.0.6",
     "plop": "2.3.0",
@@ -148,6 +151,7 @@
     "react-test-renderer": "16.8.6",
     "react-testing-library": "6.1.2",
     "rimraf": "2.6.3",
+    "sass-loader": "^8.0.2",
     "shelljs": "^0.8.3",
     "style-loader": "0.23.1",
     "stylelint": "10.0.1",

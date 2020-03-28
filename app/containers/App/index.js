@@ -20,12 +20,9 @@ import Footer from 'components/Footer';
 import GlobalStyle from '../../global-styles';
 
 const AppWrapper = styled.div`
-  max-width: calc(768px + 16px * 2);
-  margin: 0 auto;
-  display: flex;
-  min-height: 100%;
-  padding: 0 16px;
-  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 `;
 
 export default function App() {
@@ -37,12 +34,15 @@ export default function App() {
       >
         <meta name="description" content="" />
       </Helmet>
+
       <Header />
+
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/features" component={FeaturePage} />
         <Route path="" component={NotFoundPage} />
       </Switch>
+
       <Footer />
       <GlobalStyle />
     </AppWrapper>
