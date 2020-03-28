@@ -1,10 +1,10 @@
 {
-  "name": "react-boilerplate",
+  "name": "salve-a-quebrada",
   "version": "4.0.0",
   "description": "A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices",
   "repository": {
     "type": "git",
-    "url": "git://github.com/react-boilerplate/react-boilerplate.git"
+    "url": "git://github.com/salve-a-quebrada/salve-a-quebrada.git"
   },
   "engines": {
     "npm": ">=5",
