@@ -1,5 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 
+const defaultFont = 'Arial, Helvetica, sans-serif';
+const font = `Lato, ${defaultFont}`;
+
 const GlobalStyle = createGlobalStyle`
   html,
   body {
@@ -9,11 +12,11 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: ${defaultFont};
   }
 
   body.fontLoaded {
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: ${font};
   }
 
   #app {
@@ -24,7 +27,6 @@ const GlobalStyle = createGlobalStyle`
 
   p,
   label {
-    font-family: Georgia, Times, 'Times New Roman', serif;
     line-height: 1.5em;
   }
 `;
