@@ -9,14 +9,14 @@ export default styled(Link)`
   user-select: none;
   outline: 0;
   font-weight: 900;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   color: #fff;
 
   &:active {
     color: #fff;
   }
 
-  @media (max-width: 576px) {
-    font-size: 0.9rem;
+  @media (min-width: 576px) {
+    font-size: 1.1rem;
   }
 `;

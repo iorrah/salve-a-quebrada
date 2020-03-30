@@ -14,10 +14,10 @@ const buttonStyles = css`
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  padding: 0.375rem 1rem;
+  padding: 0.375rem 0.8rem;
   margin: 0;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   line-height: 1.5;
   border-radius: 0.25rem;
   -webkit-appearance: button;
@@ -40,10 +40,10 @@ const buttonStyles = css`
     box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
   }
 
-  @media (max-width: 576px) {
-    font-size: 0.7rem;
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
+  @media (min-width: 576px) {
+    font-size: 0.9rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 `;
 

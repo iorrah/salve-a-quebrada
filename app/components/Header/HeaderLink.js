@@ -12,14 +12,14 @@ export default styled(Link)`
   cursor: pointer;
   outline: 0;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   color: white;
 
   &:active {
     color: white;
   }
 
-  @media (max-width: 576px) {
-    font-size: 0.7rem;
+  @media (min-width: 576px) {
+    font-size: 0.9rem;
   }
 `;
