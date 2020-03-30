@@ -22,6 +22,7 @@ import {
 
 import H2 from 'components/H2';
 import ReposList from 'components/ReposList';
+import Container from 'components/Container';
 
 import Main from './Main';
 import AtPrefix from './AtPrefix';
@@ -67,7 +68,7 @@ export function HomePage({
         <meta name="description" content="" />
       </Helmet>
 
-      <div className="container">
+      <Container>
         <H2>
           Directory <Small>(23 locals)</Small>
         </H2>
@@ -90,7 +91,7 @@ export function HomePage({
           </Form>
           <ReposList {...reposListProps} />
         </Section>
-      </div>
+      </Container>
     </Main>
   );
 }
