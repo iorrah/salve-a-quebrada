@@ -19,12 +19,15 @@ import {
   makeSelectLoading,
   makeSelectError,
 } from 'containers/App/selectors';
+
 import H2 from 'components/H2';
 import ReposList from 'components/ReposList';
+
+import Main from './Main';
 import AtPrefix from './AtPrefix';
-import CenteredSection from './CenteredSection';
 import Form from './Form';
 import Input from './Input';
+import Small from './Small';
 import Section from './Section';
 import messages from './messages';
 import { loadRepos } from '../App/actions';
@@ -58,24 +61,18 @@ export function HomePage({
   };
 
   return (
-    <article>
+    <Main>
       <Helmet>
         <title>Página Inicial</title>
         <meta name="description" content="" />
       </Helmet>
-      <div>
-        <CenteredSection>
-          <H2>
-            <FormattedMessage {...messages.startProjectHeader} />
-          </H2>
-          <p>
-            <FormattedMessage {...messages.startProjectMessage} />
-          </p>
-        </CenteredSection>
+
+      <div className="container">
+        <H2>
+          Directory <Small>(23 locals)</Small>
+        </H2>
+
         <Section>
-          <H2>
-            <FormattedMessage {...messages.trymeHeader} />
-          </H2>
           <Form onSubmit={onSubmitForm}>
             <label htmlFor="username">
               <FormattedMessage {...messages.trymeMessage} />
@@ -94,7 +91,7 @@ export function HomePage({
           <ReposList {...reposListProps} />
         </Section>
       </div>
-    </article>
+    </Main>
   );
 }
 
