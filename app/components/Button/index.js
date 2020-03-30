@@ -11,7 +11,6 @@ import PropTypes from 'prop-types';
 
 import A from './A';
 import StyledButton from './StyledButton';
-import Wrapper from './Wrapper';
 
 function Button(props) {
   const children = Children.toArray(props.children);
@@ -21,7 +20,7 @@ function Button(props) {
     button = <A href={props.href}>{children}</A>;
   }
 
-  return <Wrapper>{button}</Wrapper>;
+  return button;
 }
 
 Button.propTypes = {
