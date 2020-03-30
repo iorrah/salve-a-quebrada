@@ -10,6 +10,7 @@ import Hero04 from 'images/hero-04.png';
 
 import 'styles.scss';
 
+import Button from 'components/Button';
 import Img from './Img';
 import NavBar from './NavBar';
 import HeaderElement from './HeaderElement';
@@ -53,7 +54,7 @@ function Header() {
 
         <div className="header__wrapper-left">
           <HeaderLink to="/">Como funciona?</HeaderLink>
-          <HeaderLink to="/">Adicionar Local</HeaderLink>
+          <Button onClick={() => {}}>Adicionar Local</Button>
         </div>
       </NavBar>
     </HeaderElement>
