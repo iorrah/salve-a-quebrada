@@ -17,7 +17,7 @@ const buttonStyles = css`
   padding: 0.375rem 1rem;
   margin: 0;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.5;
   border-radius: 0.25rem;
   -webkit-appearance: button;

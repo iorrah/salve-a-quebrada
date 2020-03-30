@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
     width: 100%;
     line-height: normal;
-    font-size: 14px;
+    font-size: 1rem;
   }
 
   body {
