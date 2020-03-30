@@ -1,18 +1,19 @@
 import { createGlobalStyle } from 'styled-components';
 
-const defaultFont = 'Arial, Helvetica, sans-serif';
-const font = `Lato, ${defaultFont}`;
+const safeFonts = 'Arial, Helvetica, sans-serif';
+const font = `Lato, ${safeFonts}`;
 
 const GlobalStyle = createGlobalStyle`
   html,
   body {
     height: 100%;
     width: 100%;
-    line-height: 1.5;
+    line-height: normal;
+    font-size: 14px;
   }
 
   body {
-    font-family: ${defaultFont};
+    font-family: ${safeFonts};
   }
 
   body.fontLoaded {
@@ -23,11 +24,6 @@ const GlobalStyle = createGlobalStyle`
     background-color: #fafafa;
     min-height: 100%;
     min-width: 100%;
-  }
-
-  p,
-  label {
-    line-height: 1.5em;
   }
 `;
 
