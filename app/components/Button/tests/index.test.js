@@ -7,7 +7,6 @@ import { fireEvent, render } from 'react-testing-library';
 
 import Button from '../index';
 
-const handleRoute = () => {};
 const href = 'http://mxstbr.com';
 const children = <h1>Test</h1>;
 const renderComponent = (props = {}) =>
@@ -23,9 +22,9 @@ describe('<Button />', () => {
     expect(container.querySelector('a')).not.toBeNull();
   });
 
-  it('should render a <button> tag to change route if the handleRoute prop is specified', () => {
-    const { container } = renderComponent({ handleRoute });
-    expect(container.querySelector('button')).toBeDefined();
+  it('should render an <a> tag to change route if the href prop is specified', () => {
+    const { container } = renderComponent({ href });
+    expect(container.querySelector('a')).toBeDefined();
   });
 
   it('should have children', () => {
@@ -53,7 +52,7 @@ describe('<Button />', () => {
 
   it('should not adopt a type attribute when rendering a button', () => {
     const type = 'submit';
-    const { container } = renderComponent({ handleRoute, type });
+    const { container } = renderComponent({ type });
     expect(container.querySelector('button').getAttribute('type')).toBeNull();
   });
 });
