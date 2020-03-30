@@ -12,6 +12,7 @@ import 'styles.scss';
 
 import Img from './Img';
 import NavBar from './NavBar';
+import HeaderElement from './HeaderElement';
 import HeaderLink from './HeaderLink';
 
 const settings = {
@@ -27,7 +28,7 @@ const settings = {
 
 function Header() {
   return (
-    <header className="danger">
+    <HeaderElement>
       <Slider {...settings}>
         <div>
           <Img src={Hero01} alt="Imagem Restaurante Vazio 01" />
@@ -51,7 +52,7 @@ function Header() {
         <HeaderLink to="/">Como funciona?</HeaderLink>
         <HeaderLink to="/">Adicionar Local</HeaderLink>
       </NavBar>
-    </header>
+    </HeaderElement>
   );
 }
 
