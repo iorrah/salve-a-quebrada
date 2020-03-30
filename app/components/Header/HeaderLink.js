@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export default styled(Link)`
   display: inline;
-  margin: 1em;
+  margin: 0 1em;
   text-decoration: none;
   border-radius: 4px;
   -webkit-font-smoothing: antialiased;
@@ -17,5 +17,9 @@ export default styled(Link)`
 
   &:active {
     color: white;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 0.7rem;
   }
 `;

@@ -39,6 +39,12 @@ const buttonStyles = css`
     border-color: #0062cc;
     box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
   }
+
+  @media (max-width: 576px) {
+    font-size: 0.7rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
 `;
 
 export default buttonStyles;

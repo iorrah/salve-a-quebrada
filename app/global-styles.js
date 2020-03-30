@@ -32,7 +32,8 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
 
     @media (max-width: 576px) {
-      padding: 0 15px;
+      padding-left: 15px;
+      padding-right: 15px;
     }
 
     @media (min-width: 576px) {
@@ -47,7 +48,7 @@ const GlobalStyle = createGlobalStyle`
       max-width: 960px;
     }
 
-    @media (min-width: 1200px)
+    @media (min-width: 1200px) {
       max-width: 1140px;
     }
   }
