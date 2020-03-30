@@ -34,10 +34,10 @@ import { translationMessages } from './i18n';
 
 // Observe loading of Open Sans (to remove open sans, remove the <link> tag in
 // the index.html file and this observer)
-const openSansObserver = new FontFaceObserver('Open Sans', {});
+const fontFamilyObserver = new FontFaceObserver('Lato', {});
 
 // When Open Sans is loaded, add a font-family using Open Sans to the body
-openSansObserver.load().then(() => {
+fontFamilyObserver.load().then(() => {
   document.body.classList.add('fontLoaded');
 });
 
