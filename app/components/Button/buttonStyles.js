@@ -1,25 +1,30 @@
 import { css } from 'styled-components';
 
 const buttonStyles = css`
-  display: inline-block;
-  box-sizing: border-box;
-  padding: 0.25em 2em;
-  text-decoration: none;
-  border-radius: 4px;
-  -webkit-font-smoothing: antialiased;
-  -webkit-touch-callout: none;
-  user-select: none;
+  color: #fff;
+  background-color: #007bff;
+  border-color: ;
+  border: 1px solid #007bff;
+  display: inline;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
   cursor: pointer;
-  outline: 0;
-  font-weight: bold;
-  font-size: 16px;
-  border: 2px solid #41addd;
-  color: #41addd;
-
-  &:active {
-    background: #41addd;
-    color: #fff;
-  }
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 0.375rem 1rem;
+  margin: 0;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  -webkit-appearance: button;
+  text-transform: none;
+  overflow: visible;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 `;
 
 export default buttonStyles;
