@@ -2,8 +2,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export default styled(Link)`
-  display: inline-flex;
-  padding: 0.25em 2em;
+  display: inline;
   margin: 1em;
   text-decoration: none;
   border-radius: 4px;
@@ -12,13 +11,11 @@ export default styled(Link)`
   user-select: none;
   cursor: pointer;
   outline: 0;
-  font-weight: bold;
-  font-size: 16px;
-  border: 2px solid #41addd;
-  color: #41addd;
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
 
   &:active {
-    background: #41addd;
-    color: #fff;
+    color: white;
   }
 `;
