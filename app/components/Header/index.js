@@ -50,8 +50,11 @@ function Header() {
 
       <NavBar>
         <Logo to="/">Salve a Quebrada</Logo>
-        <HeaderLink to="/">Como funciona?</HeaderLink>
-        <HeaderLink to="/">Adicionar Local</HeaderLink>
+
+        <div className="header__wrapper-left">
+          <HeaderLink to="/">Como funciona?</HeaderLink>
+          <HeaderLink to="/">Adicionar Local</HeaderLink>
+        </div>
       </NavBar>
     </HeaderElement>
   );
