@@ -12,10 +12,11 @@ export default styled.input`
   font-weight: 300;
   transition: box-shadow 0.3s;
   font-size: 0.8rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 
   &:focus {
     outline: transparent;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
   }
 
   @media (min-width: 576px) {
