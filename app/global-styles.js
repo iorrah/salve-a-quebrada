@@ -25,6 +25,12 @@ const GlobalStyle = createGlobalStyle`
     min-height: 100%;
     min-width: 100%;
   }
+
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 100%;
+  }
 `;
 
 export default GlobalStyle;

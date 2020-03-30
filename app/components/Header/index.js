@@ -11,6 +11,8 @@ import Hero04 from 'images/hero-04.png';
 import 'styles.scss';
 
 import Button from 'components/Button';
+
+import Container from './Container';
 import Img from './Img';
 import NavBar from './NavBar';
 import HeaderElement from './HeaderElement';
@@ -50,12 +52,14 @@ function Header() {
       </Slider>
 
       <NavBar>
-        <Logo to="/">Salve a Quebrada</Logo>
+        <Container className="container">
+          <Logo to="/">Salve a Quebrada</Logo>
 
-        <div className="header__wrapper-left">
-          <HeaderLink to="/">Como funciona?</HeaderLink>
-          <Button onClick={() => {}}>Adicionar Local</Button>
-        </div>
+          <div>
+            <HeaderLink to="/">Como funciona?</HeaderLink>
+            <Button onClick={() => {}}>Adicionar Local</Button>
+          </div>
+        </Container>
       </NavBar>
     </HeaderElement>
   );
