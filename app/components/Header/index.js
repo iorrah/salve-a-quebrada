@@ -14,6 +14,7 @@ import Img from './Img';
 import NavBar from './NavBar';
 import HeaderElement from './HeaderElement';
 import HeaderLink from './HeaderLink';
+import Logo from './Logo';
 
 const settings = {
   dots: false,
@@ -48,7 +49,7 @@ function Header() {
       </Slider>
 
       <NavBar>
-        <HeaderLink to="/">Salve a Quebrada</HeaderLink>
+        <Logo to="/">Salve a Quebrada</Logo>
         <HeaderLink to="/">Como funciona?</HeaderLink>
         <HeaderLink to="/">Adicionar Local</HeaderLink>
       </NavBar>
