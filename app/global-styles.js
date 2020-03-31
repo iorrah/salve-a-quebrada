@@ -25,33 +25,6 @@ const GlobalStyle = createGlobalStyle`
     min-height: 100%;
     min-width: 100%;
   }
-
-  .container {
-    max-width: none;
-    margin: 0 auto;
-    width: 100%;
-
-    @media (max-width: 576px) {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-
-    @media (min-width: 576px) {
-      max-width: 540px;
-    }
-
-    @media (min-width: 768px) {
-      max-width: 720px;
-    }
-
-    @media (min-width: 992px) {
-      max-width: 960px;
-    }
-
-    @media (min-width: 1200px) {
-      max-width: 1140px;
-    }
-  }
 `;
 
 export default GlobalStyle;
