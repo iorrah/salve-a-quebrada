@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
     line-height: normal;
     font-size: 1rem;
+    color: #333;
   }
 
   body {
