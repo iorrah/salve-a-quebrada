@@ -6,27 +6,28 @@ import Container from './Container';
 import ToggleContainer from './ToggleContainer';
 import A from './A';
 import Copyright from './Copyright';
-import SocialContainer from './SocialContainer';
 
 function Footer() {
   return (
     <FooterStyled>
       <Container className="container">
-        <section>
+        <div>
           <A href="#">Termos</A>
           <A href="#">Privacidade</A>
-        </section>
+        </div>
 
         <ToggleContainer>
           <LocaleToggle />
         </ToggleContainer>
 
-        <Copyright>© 2020 Salve Quebrada</Copyright>
+        <div>
+          <Copyright>© 2020 Salve Quebrada</Copyright>
+        </div>
 
-        <SocialContainer>
+        <div>
           <A href="#">Twitter</A>
           <A href="#">Instagram</A>
-        </SocialContainer>
+        </div>
       </Container>
     </FooterStyled>
   );
