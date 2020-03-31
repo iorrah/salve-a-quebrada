@@ -8,7 +8,7 @@ export default styled.p`
   margin: 0 0 0.7rem;
 
   @media (min-width: 576px) {
-    font-size: 1.1rem;
-    margin: 0 0 1.8rem;
+    font-size: 1.3rem;
+    margin: 0 0 2rem;
   }
 `;

@@ -9,6 +9,7 @@ export default styled.h1`
   margin: 0 0 0.5rem;
 
   @media (min-width: 576px) {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
+    margin: 0 0 0.8rem;
   }
 `;

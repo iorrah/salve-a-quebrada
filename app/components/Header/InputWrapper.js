@@ -6,7 +6,8 @@ export default styled.div`
   height: 25.59px;
   overflow: visible;
   margin: 0 auto;
-  width: 70%;
+  width: 100%;
+  max-width: 70%;
 
   @media (min-width: 576px) {
     border-radius: 0.2rem;
@@ -14,10 +15,10 @@ export default styled.div`
   }
 
   @media (min-width: 768px) {
-    width: 75%;
+    max-width: 75%;
   }
 
   @media (min-width: 992px) {
-    width: 100%;
+    max-width: 30rem;
   }
 `;

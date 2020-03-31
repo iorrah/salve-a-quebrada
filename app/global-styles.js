@@ -7,8 +7,10 @@ export const colors = {
   primary: '#0579ff',
   primaryDarken: '#0552ff',
   copy: '#333',
-  white: 'white',
   gray: '#8e8e8e',
+  fog: '#f5f5f5',
+  cloud: '#f7f7f7',
+  white: 'white',
 };
 
 const GlobalStyle = createGlobalStyle`

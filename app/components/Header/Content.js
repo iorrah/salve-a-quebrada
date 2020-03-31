@@ -2,5 +2,6 @@ import styled from 'styled-components';
 
 export default styled.div`
   margin: 0 auto;
-  max-width: 40rem;
+  width: 100%;
+  max-width: 45rem;
 `;
