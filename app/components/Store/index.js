@@ -23,7 +23,7 @@ function Store(props) {
         <Details>
           <H3>{store.name}</H3>
 
-          <div className="mb-md-3">
+          <div className="mb-3">
             <P>
               {store.rua}, {store.numero}
             </P>
