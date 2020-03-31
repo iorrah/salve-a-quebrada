@@ -44,8 +44,8 @@ function Header() {
           </Title>
 
           <SubTitle>
-            Um vale-presente pode diminuir o prejuízo causado{' '}
-            <NoWrap>pelo COVID-19</NoWrap>
+            Doe um vale-presente pra impedir demissões e falências{' '}
+            <NoWrap>causadas pelo COVID-19</NoWrap>
           </SubTitle>
 
           <InputWrapper>
