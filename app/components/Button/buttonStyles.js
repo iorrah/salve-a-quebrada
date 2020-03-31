@@ -1,10 +1,6 @@
 import { css } from 'styled-components';
 
 const buttonStyles = css`
-  color: #fff;
-  background-color: #007bff;
-  border-color: ;
-  border: 1px solid #007bff;
   display: inline;
   font-weight: 400;
   text-align: center;
@@ -20,6 +16,8 @@ const buttonStyles = css`
   font-size: 0.7rem;
   line-height: 1.5;
   border-radius: 0.25rem;
+  border-width: 1px;
+  border-style: solid;
   -webkit-appearance: button;
   text-transform: none;
   overflow: visible;
@@ -27,16 +25,10 @@ const buttonStyles = css`
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
   &:hover {
-    color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
     text-decoration: none;
   }
 
   &:focus {
-    color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
     box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
   }
 

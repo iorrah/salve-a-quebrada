@@ -1,19 +1,23 @@
-/**
- *
- * Button.js
- *
- * A common button, if you pass it a prop "route" it'll render a link to a react-router route
- * otherwise it'll render a link with an onclick
- */
-
 import React, { Children } from 'react';
 import PropTypes from 'prop-types';
 
 import A from './A';
-import StyledButton from './StyledButton';
+import PrimaryButton from './PrimaryButton';
+import HollowButton from './HollowButton';
 
 function Button(props) {
   const children = Children.toArray(props.children);
+  let StyledButton = null;
+
+  switch (props.type) {
+    case 'hollow':
+      StyledButton = HollowButton;
+      break;
+    default:
+      StyledButton = PrimaryButton;
+      break;
+  }
+
   let button = <StyledButton onClick={props.onClick}>{children}</StyledButton>;
 
   if (props.href) {
@@ -24,6 +28,7 @@ function Button(props) {
 }
 
 Button.propTypes = {
+  type: PropTypes.string,
   href: PropTypes.string,
   onClick: PropTypes.func,
   children: PropTypes.node.isRequired,
