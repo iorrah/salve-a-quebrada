@@ -4,18 +4,20 @@
  * This is the first thing users see of our App, at the '/' route
  */
 
-import React, { useEffect, memo } from 'react';
+import React, { useEffect, memo, useState } from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { createStructuredSelector } from 'reselect';
+import * as firebase from 'firebase/app';
+import '@firebase/firestore';
+
 import 'static/bootstrap-grid.css';
 
 import { useInjectReducer } from 'utils/injectReducer';
 import { useInjectSaga } from 'utils/injectSaga';
-import stores from 'mock/stores';
 
 import {
   makeSelectRepos,
@@ -46,6 +48,17 @@ import saga from './saga';
 
 const key = 'home';
 
+const firebaseConfig = {
+  apiKey: 'xxxxxxxxx',
+  authDomain: 'xxxxxxxxx',
+  databaseURL: 'xxxxxxxxx',
+  projectId: 'xxxxxxxxx',
+  storageBucket: 'xxxxxxxxx',
+  messagingSenderId: 'xxxxxxxxx',
+  appId: 'xxxxxxxxx',
+  measurementId: 'xxxxxxxxx',
+};
+
 export function HomePage({
   username,
   loading,
@@ -57,9 +70,29 @@ export function HomePage({
   useInjectReducer({ key, reducer });
   useInjectSaga({ key, saga });
 
+  const [stores, setStores] = useState([]);
+
   useEffect(() => {
     // When initial state username is not null, submit the form to load repos
     if (username && username.trim().length > 0) onSubmitForm();
+
+    if (!firebase.apps.length) {
+      firebase.initializeApp(firebaseConfig);
+    }
+
+    const db = firebase.firestore();
+
+    db.collection('stores')
+      .get()
+      .then(querySnapshot => {
+        const rawStores = [];
+
+        querySnapshot.forEach(doc => {
+          rawStores.push({ ...doc.data(), id: doc.id });
+        });
+
+        setStores(rawStores);
+      });
   }, []);
 
   const reposListProps = {
@@ -78,7 +111,7 @@ export function HomePage({
       <Container>
         <Header>
           <H2>
-            Directory <Small>(23 locals)</Small>
+            Directory <Small>({stores.length} locals)</Small>
           </H2>
 
           <Button onClick={() => {}}>Adicionar Local</Button>
