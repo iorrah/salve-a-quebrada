@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 const Section = styled.section`
   margin: 3em auto;
+  display: none;
 
   &:first-child {
     margin-top: 0;

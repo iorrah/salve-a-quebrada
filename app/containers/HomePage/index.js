@@ -14,6 +14,8 @@ import { createStructuredSelector } from 'reselect';
 
 import { useInjectReducer } from 'utils/injectReducer';
 import { useInjectSaga } from 'utils/injectSaga';
+import stores from 'mock/stores';
+
 import {
   makeSelectRepos,
   makeSelectLoading,
@@ -23,8 +25,10 @@ import {
 import H2 from 'components/H2';
 import ReposList from 'components/ReposList';
 import Container from 'components/Container';
+import Store from 'components/Store';
 
 import Main from './Main';
+import Stores from './Stores';
 import AtPrefix from './AtPrefix';
 import Form from './Form';
 import Input from './Input';
@@ -72,6 +76,12 @@ export function HomePage({
         <H2>
           Directory <Small>(23 locals)</Small>
         </H2>
+
+        <Stores>
+          {stores.map(store => (
+            <Store store={store} key={store.id} />
+          ))}
+        </Stores>
 
         <Section>
           <Form onSubmit={onSubmitForm}>
