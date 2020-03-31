@@ -10,14 +10,13 @@ export default styled.input`
   font-weight: 400;
   transition: box-shadow 0.2s, opacity 0.2s;
   font-size: 0.8rem;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
   opacity: 0.5;
   color: #333;
   width: 100%;
 
   &:focus {
     outline: transparent;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
     opacity: 1;
   }
 
