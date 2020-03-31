@@ -6,10 +6,10 @@ export default styled.div`
   width: 100%;
 
   @media (min-width: 768px) {
-    top: 7rem;
+    top: 8.5rem;
   }
 
   @media (min-width: 992px) {
-    top: 9rem;
+    top: 11rem;
   }
 `;
