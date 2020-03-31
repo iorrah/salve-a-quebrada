@@ -6,6 +6,7 @@ const font = `Lato, ${safeFonts}`;
 export const colors = {
   primary: '#0579ff',
   primaryDarken: '#0552ff',
+  black: '#000',
   copy: '#333',
   gray: '#8e8e8e',
   fog: '#f5f5f5',
