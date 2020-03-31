@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 
 import storeFront from 'images/store-front.png';
 
+import Button from 'components/Button';
+
 import Container from './Container';
 import Content from './Content';
 import Img from './Img';
@@ -21,13 +23,19 @@ function Store(props) {
         <Details>
           <H3>{store.name}</H3>
 
-          <P>
-            {store.rua}, {store.numero}
-          </P>
+          <div className="mb-md-3">
+            <P>
+              {store.rua}, {store.numero}
+            </P>
 
-          <P>
-            {store.bairro}, {store.cidade} - {store.estado}
-          </P>
+            <P>
+              {store.bairro}, {store.cidade} - {store.estado}
+            </P>
+          </div>
+
+          <Button type="hollow" onClick={() => {}}>
+            Abrir Doações
+          </Button>
         </Details>
       </Content>
     </Container>
