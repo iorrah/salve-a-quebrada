@@ -17,6 +17,7 @@ const settings = {
   slidesToScroll: 1,
   autoplay: true,
   fade: true,
+  arrows: false,
 };
 
 function Carousel() {
