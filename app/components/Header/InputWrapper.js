@@ -7,7 +7,7 @@ export default styled.div`
   overflow: visible;
   margin: 0 auto;
   width: 100%;
-  max-width: 70%;
+  max-width: 15rem;
 
   @media (min-width: 576px) {
     border-radius: 0.2rem;

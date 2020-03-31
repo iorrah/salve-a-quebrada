@@ -1,5 +1,10 @@
 .slick-list {
   height: auto;
+  max-height: 450px;
+
+  @media (min-width: 576px) {
+    max-height: 550px;
+  }
 
   @media (min-width: 576px) {
     max-height: 550px;

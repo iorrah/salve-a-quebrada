@@ -10,7 +10,7 @@ export default styled(Link)`
   user-select: none;
   outline: 0;
   font-weight: 900;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   color: ${colors.white};
 
   &:active {

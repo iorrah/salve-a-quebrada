@@ -13,7 +13,7 @@ export default styled(Link)`
   cursor: pointer;
   outline: 0;
   font-weight: 500;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   color: ${colors.white};
 
   &:active {
