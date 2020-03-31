@@ -78,7 +78,7 @@ export function HomePage({
           Directory <Small>(23 locals)</Small>
         </H2>
 
-        <Stores>
+        <Stores className="row">
           {stores.map(store => (
             <Store store={store} key={store.id} />
           ))}

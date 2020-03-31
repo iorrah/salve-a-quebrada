@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-const Stores = styled.section`
-  display: block;
+const Stores = styled.div`
+  margin-bottom: 1rem;
 `;
 
 export default Stores;
