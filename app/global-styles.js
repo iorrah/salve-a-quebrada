@@ -8,6 +8,7 @@ export const colors = {
   primaryDarken: '#0552ff',
   copy: '#333',
   white: 'white',
+  gray: '#8e8e8e',
 };
 
 const GlobalStyle = createGlobalStyle`

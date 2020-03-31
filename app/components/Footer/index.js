@@ -1,28 +1,32 @@
 import React from 'react';
 
-import A from 'components/A';
-
 import LocaleToggle from 'containers/LocaleToggle';
 import FooterStyled from './FooterStyled';
 import Container from './Container';
+import ToggleContainer from './ToggleContainer';
+import A from './A';
+import Copyright from './Copyright';
+import SocialContainer from './SocialContainer';
 
 function Footer() {
   return (
     <FooterStyled>
       <Container className="container">
         <section>
-          <A href="#">Termos</A> <A href="#">Privacidade</A>
+          <A href="#">Termos</A>
+          <A href="#">Privacidade</A>
         </section>
 
-        <section>
+        <ToggleContainer>
           <LocaleToggle />
-        </section>
+        </ToggleContainer>
 
-        <section>c 2020 Salve Quebrada</section>
+        <Copyright>© 2020 Salve Quebrada</Copyright>
 
-        <section>
-          <i>Twitter</i> <i>Instagram</i>
-        </section>
+        <SocialContainer>
+          <A href="#">Twitter</A>
+          <A href="#">Instagram</A>
+        </SocialContainer>
       </Container>
     </FooterStyled>
   );
