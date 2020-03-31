@@ -16,6 +16,7 @@ import Hero from './Hero';
 import Content from './Content';
 import Title from './Title';
 import SubTitle from './SubTitle';
+import InputWrapper from './InputWrapper';
 import Input from './Input';
 
 function Header() {
@@ -37,7 +38,7 @@ function Header() {
       <Hero>
         <Content>
           <Title>
-            O seu lugar favorito na cidade pode fechar pra sempre. Ajude a
+            Seu lugar favorito na cidade pode fechar pra sempre. Ajude a
             salvá-lo.
           </Title>
 
@@ -45,7 +46,9 @@ function Header() {
             Um vale-presente pode diminuir o prejuízo causado pelo COVID-19
           </SubTitle>
 
-          <Input placeholder="Busque por lugares que você ama" type="text" />
+          <InputWrapper>
+            <Input placeholder="Busque por lugares que você ama" type="text" />
+          </InputWrapper>
         </Content>
       </Hero>
     </HeaderElement>

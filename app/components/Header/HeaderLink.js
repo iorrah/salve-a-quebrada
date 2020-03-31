@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export default styled(Link)`
   display: inline;
-  margin: 0 1em;
+  margin: 0 1.5rem;
   text-decoration: none;
   border-radius: 4px;
   -webkit-font-smoothing: antialiased;
