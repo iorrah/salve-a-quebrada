@@ -18,6 +18,7 @@ const GlobalStyle = createGlobalStyle`
     line-height: normal;
     font-size: 1rem;
     color: ${colors.copy};
+    cursor: auto;
   }
 
   body {
