@@ -10,10 +10,10 @@ const buttonStyles = css`
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  padding: 0.5rem 0.8rem 0.5rem;
+  padding: 0.3rem 0.6rem;
   margin: 0;
   font-family: inherit;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   line-height: 1.5;
   border-radius: 0.1rem;
   border-width: 1px;
