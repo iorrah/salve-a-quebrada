@@ -27,6 +27,7 @@ import H2 from 'components/H2';
 import ReposList from 'components/ReposList';
 import Container from 'components/Container';
 import Store from 'components/Store';
+import Button from 'components/Button';
 
 import Main from './Main';
 import Stores from './Stores';
@@ -83,6 +84,10 @@ export function HomePage({
             <Store store={store} key={store.id} />
           ))}
         </Stores>
+
+        <Button size="large" onClick={() => {}}>
+          Carregar mais
+        </Button>
 
         <Section>
           <Form onSubmit={onSubmitForm}>
