@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export default styled(Link)`
-  display: inline;
-  margin: 0 1.5rem;
+  display: inline-block;
+  margin: 0 2rem;
   text-decoration: none;
   border-radius: 4px;
   -webkit-font-smoothing: antialiased;
@@ -20,6 +20,6 @@ export default styled(Link)`
   }
 
   @media (min-width: 576px) {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 `;

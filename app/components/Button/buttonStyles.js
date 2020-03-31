@@ -10,12 +10,12 @@ const buttonStyles = css`
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  padding: 0.375rem 0.8rem;
+  padding: 0.55rem 0.8rem 0.5rem;
   margin: 0;
   font-family: inherit;
   font-size: 0.7rem;
   line-height: 1.5;
-  border-radius: 0.25rem;
+  border-radius: 0.1rem;
   border-width: 1px;
   border-style: solid;
   -webkit-appearance: button;
@@ -33,9 +33,9 @@ const buttonStyles = css`
   }
 
   @media (min-width: 576px) {
-    font-size: 0.9rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    font-size: 0.75rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 `;
 
