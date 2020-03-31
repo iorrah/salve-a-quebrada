@@ -1,7 +1,8 @@
 import styled from 'styled-components';
+import { colors } from 'global-styles';
 
 export default styled.p`
-  color: white;
+  color: ${colors.white};
   text-align: center;
   font-size: 0.7rem;
   margin: 0 0 0.7rem;

@@ -1,23 +1,23 @@
 import styled from 'styled-components';
-
+import { colors } from 'global-styles';
 import buttonStyles from './buttonStyles';
 
 const PrimaryButton = styled.button`
   ${buttonStyles};
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  color: ${colors.white};
+  background-color: ${colors.primary};
+  border-color: ${colors.primary};
 
   &:hover {
-    color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
+    color: ${colors.white};
+    background-color: ${colors.primaryDarken};
+    border-color: ${colors.primaryDarken};
   }
 
   &:focus {
-    color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
+    color: ${colors.white};
+    background-color: ${colors.primaryDarken};
+    border-color: ${colors.primaryDarken};
   }
 `;
 

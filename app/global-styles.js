@@ -3,6 +3,13 @@ import { createGlobalStyle } from 'styled-components';
 const safeFonts = 'Arial, Helvetica, sans-serif';
 const font = `Lato, ${safeFonts}`;
 
+export const colors = {
+  primary: '#0579ff',
+  primaryDarken: '#0552ff',
+  copy: '#333',
+  white: 'white',
+};
+
 const GlobalStyle = createGlobalStyle`
   html,
   body {
@@ -10,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
     line-height: normal;
     font-size: 1rem;
-    color: #333;
+    color: ${colors.copy};
   }
 
   body {

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { colors } from 'global-styles';
 
 export default styled(Link)`
   display: inline-block;
@@ -10,10 +11,10 @@ export default styled(Link)`
   outline: 0;
   font-weight: 900;
   font-size: 0.9rem;
-  color: #fff;
+  color: ${colors.white};
 
   &:active {
-    color: #fff;
+    color: ${colors.white};
   }
 
   @media (min-width: 576px) {

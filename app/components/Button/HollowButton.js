@@ -1,23 +1,23 @@
 import styled from 'styled-components';
-
+import { colors } from 'global-styles';
 import buttonStyles from './buttonStyles';
 
 const HollowButton = styled.button`
   ${buttonStyles};
-  color: #007bff;
-  background-color: white;
-  border-color: #007bff;
+  color: ${colors.primary};
+  background-color: ${colors.white};
+  border-color: ${colors.primary};
 
   &:hover {
-    color: #007bff;
-    background-color: #f5f5f5;
-    border-color: #007bff;
+    color: ${colors.primaryDarken};
+    background-color: ${colors.white};
+    border-color: ${colors.primaryDarken};
   }
 
   &:focus {
-    color: #007bff;
-    background-color: #f5f5f5;
-    border-color: #007bff;
+    color: ${colors.primaryDarken};
+    background-color: ${colors.white};
+    border-color: ${colors.primaryDarken};
   }
 `;
 

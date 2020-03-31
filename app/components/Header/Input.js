@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { colors } from 'global-styles';
 
 export default styled.input`
   height: 0.7rem;
@@ -12,7 +13,7 @@ export default styled.input`
   font-size: 0.8rem;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
   opacity: 0.5;
-  color: #333;
+  color: ${colors.copy};
   width: 100%;
 
   &:focus {

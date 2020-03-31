@@ -1,7 +1,8 @@
 import styled from 'styled-components';
+import { colors } from 'global-styles';
 
 export default styled.h1`
-  color: white;
+  color: ${colors.white};
   font-size: 1rem;
   font-weight: 600;
   text-align: center;
