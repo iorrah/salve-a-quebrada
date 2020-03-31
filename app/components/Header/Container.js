@@ -4,5 +4,5 @@ export default styled.div`
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
 `;
