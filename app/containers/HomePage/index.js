@@ -30,6 +30,7 @@ import Store from 'components/Store';
 import Button from 'components/Button';
 
 import Main from './Main';
+import Header from './Header';
 import Stores from './Stores';
 import AtPrefix from './AtPrefix';
 import Form from './Form';
@@ -75,9 +76,13 @@ export function HomePage({
       </Helmet>
 
       <Container>
-        <H2>
-          Directory <Small>(23 locals)</Small>
-        </H2>
+        <Header>
+          <H2>
+            Directory <Small>(23 locals)</Small>
+          </H2>
+
+          <Button onClick={() => {}}>Adicionar Local</Button>
+        </Header>
 
         <Stores className="row">
           {stores.map(store => (
