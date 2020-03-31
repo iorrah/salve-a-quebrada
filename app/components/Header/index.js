@@ -18,6 +18,7 @@ import Title from './Title';
 import SubTitle from './SubTitle';
 import InputWrapper from './InputWrapper';
 import Input from './Input';
+import NoWrap from './NoWrap';
 
 function Header() {
   return (
@@ -43,7 +44,8 @@ function Header() {
           </Title>
 
           <SubTitle>
-            Um vale-presente pode diminuir o prejuízo causado pelo COVID-19
+            Um vale-presente pode diminuir o prejuízo causado{' '}
+            <NoWrap>pelo COVID-19</NoWrap>
           </SubTitle>
 
           <InputWrapper>
