@@ -1,38 +1,47 @@
-/**
- * Gets the repositories of the user from Github
- */
+import * as firebase from 'firebase/app';
+import '@firebase/firestore';
 
-import { call, put, select, takeLatest } from 'redux-saga/effects';
-import { LOAD_REPOS } from 'containers/App/constants';
-import { reposLoaded, repoLoadingError } from 'containers/App/actions';
+import { take, put, takeLatest } from 'redux-saga/effects';
+import { eventChannel } from 'redux-saga';
 
-import request from 'utils/request';
-import { makeSelectUsername } from 'containers/HomePage/selectors';
+import { storesLoaded, storesLoadingError } from './actions';
+import { LOAD_STORES } from './constants';
 
-/**
- * Github repos request/response handler
- */
-export function* getRepos() {
-  // Select username from store
-  const username = yield select(makeSelectUsername());
-  const requestURL = `https://api.github.com/users/${username}/repos?type=all&sort=updated`;
+const firebaseConfig = {
+  apiKey: 'xxxxxxxxx',
+  authDomain: 'xxxxxxxxx',
+  databaseURL: 'xxxxxxxxx',
+  projectId: 'xxxxxxxxx',
+  storageBucket: 'xxxxxxxxx',
+  messagingSenderId: 'xxxxxxxxx',
+  appId: 'xxxxxxxxx',
+  measurementId: 'xxxxxxxxx',
+};
+
+export function* getStores() {
+  if (!firebase.apps.length) {
+    firebase.initializeApp(firebaseConfig);
+  }
+
+  const reference = firebase.firestore().collection('stores');
+  const channel = eventChannel(emit => reference.onSnapshot(emit));
 
   try {
-    // Call our request helper (see 'utils/request')
-    const repos = yield call(request, requestURL);
-    yield put(reposLoaded(repos, username));
+    while (true) {
+      const rawStores = [];
+      const data = yield take(channel);
+
+      data.forEach(doc => {
+        rawStores.push({ ...doc.data(), id: doc.id });
+      });
+
+      yield put(storesLoaded(rawStores));
+    }
   } catch (err) {
-    yield put(repoLoadingError(err));
+    yield put(storesLoadingError(err));
   }
 }
 
-/**
- * Root saga manages watcher lifecycle
- */
-export default function* githubData() {
-  // Watches for LOAD_REPOS actions and calls getRepos when one comes in.
-  // By using `takeLatest` only the result of the latest API call is applied.
-  // It returns task descriptor (just like fork) so we can continue execution
-  // It will be cancelled automatically on component unmount
-  yield takeLatest(LOAD_REPOS, getRepos);
+export default function* init() {
+  yield takeLatest(LOAD_STORES, getStores);
 }
