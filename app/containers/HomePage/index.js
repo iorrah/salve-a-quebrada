@@ -61,9 +61,9 @@ export function HomePage({ loading, error, dispatchLoadStores, stores }) {
           ))}
         </Stores>
 
-        <Button size="large" onClick={() => {}}>
+        {/* <Button size="large" onClick={() => {}}>
           Carregar mais
-        </Button>
+        </Button> */}
       </Container>
     </Main>
   );
