@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import storeFront from 'images/store-front.png';
+import placeholder from 'images/placeholder.jpg';
 
 import Button from 'components/Button';
 
@@ -14,11 +14,16 @@ import P from './P';
 
 function Store(props) {
   const { store } = props;
+  let href = placeholder;
+
+  if (store.image !== '' && store.image !== undefined) {
+    href = store.image;
+  }
 
   return (
     <Container className="col-md-6 col-lg-4">
       <Content>
-        <Img src={storeFront} alt="Foto do Restaurante" />
+        <Img src={href} alt="Foto do Restaurante" />
 
         <Details>
           <H3>{store.name}</H3>
