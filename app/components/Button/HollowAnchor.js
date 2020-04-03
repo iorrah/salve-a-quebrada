@@ -1,9 +1,8 @@
 import styled from 'styled-components';
-
-import buttonStyles from './buttonStyles';
+import hollowStyles from './hollowStyles';
 
 const A = styled.a`
-  ${buttonStyles};
+  ${hollowStyles}
 `;
 
 export default A;
