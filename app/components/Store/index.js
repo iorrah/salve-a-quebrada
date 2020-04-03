@@ -33,7 +33,7 @@ function Store(props) {
             </P>
           </div>
 
-          <Button type="hollow" onClick={() => {}}>
+          <Button type="hollow" target="_blank" href={store.donation}>
             Abrir Doações
           </Button>
         </Details>
