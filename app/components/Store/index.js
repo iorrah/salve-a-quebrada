@@ -24,13 +24,7 @@ function Store(props) {
           <H3>{store.name}</H3>
 
           <div className="mb-3">
-            <P>
-              {store.rua}, {store.numero}
-            </P>
-
-            <P>
-              {store.bairro}, {store.cidade} - {store.estado}
-            </P>
+            <P>{store.city}</P>
           </div>
 
           <Button type="hollow" target="_blank" href={store.donation}>
