@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>icon Close</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="Page-09" transform="translate(-1469.000000, -138.000000)" stroke="#CCCCCC" stroke-width="2">
+            <g id="ui-Modal" transform="translate(488.000000, 113.000000)">
+                <path d="M983.177419,37.4677419 L993.467742,27.1774194 M983.177419,27.1774194 L993.822581,37.8225806" id="icon-Close"></path>
+            </g>
+        </g>
+    </g>
+</svg>

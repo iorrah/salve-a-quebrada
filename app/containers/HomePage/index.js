@@ -15,6 +15,7 @@ import { makeSelectLoading, makeSelectError } from 'containers/App/selectors';
 import H2 from 'components/H2';
 import Container from 'components/Container';
 import Store from 'components/Store';
+import Modal from 'components/Modal';
 import Button from 'components/Button';
 
 import Main from './Main';
@@ -65,6 +66,8 @@ export function HomePage({ loading, error, dispatchLoadStores, stores }) {
           Carregar mais
         </Button> */}
       </Container>
+
+      <Modal />
     </Main>
   );
 }
