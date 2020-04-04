@@ -34,7 +34,7 @@ const buttonStyles = css`
   }
 
   @media (min-width: 576px) {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     padding: 0.55rem 2rem 0.5rem;
   }
 `;
