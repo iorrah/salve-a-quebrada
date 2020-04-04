@@ -37,15 +37,19 @@ $primaryColor: #0579ff;
 }
 
 .modal__header {
-  padding: 3.5rem 0 1rem;
+  padding: 3.5rem 0 0.5rem;
   position: relative;
 }
 
 .modal__title {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 600;
   text-align: center;
   margin: 0;
+
+  @media (min-width: 576px) {
+    font-size: 1.3rem;
+  }
 }
 
 .modal__close-button {
