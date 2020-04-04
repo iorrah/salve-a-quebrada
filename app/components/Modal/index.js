@@ -35,6 +35,8 @@ function Modal(props) {
                 className="modal__input"
                 type="text"
                 placeholder="Nome do local"
+                value={props.name}
+                onChange={props.handleChange}
               />
             </div>
 
@@ -44,6 +46,8 @@ function Modal(props) {
                 className="modal__input"
                 type="text"
                 placeholder="Cidade"
+                value={props.city}
+                onChange={props.handleChange}
               />
             </div>
 
@@ -53,6 +57,8 @@ function Modal(props) {
                 className="modal__input"
                 type="text"
                 placeholder="Link para doação"
+                value={props.link}
+                onChange={props.handleChange}
               />
             </div>
 
@@ -62,6 +68,8 @@ function Modal(props) {
                 className="modal__input modal__input--file"
                 type="text"
                 placeholder="Foto da faixada"
+                value={props.imageText}
+                onChange={props.handleChange}
               />
 
               <input
@@ -82,7 +90,7 @@ function Modal(props) {
           </div>
 
           <div className="modal__footer">
-            <Button onClick={props.handleClick}>Adicionar Local</Button>
+            <Button onClick={props.handleSubmit}>Adicionar Local</Button>
           </div>
         </div>
       </div>
@@ -91,8 +99,13 @@ function Modal(props) {
 }
 
 Modal.propTypes = {
-  handleClick: PropTypes.func,
+  handleSubmit: PropTypes.func,
   handleClose: PropTypes.func,
+  handleChange: PropTypes.func,
+  name: PropTypes.string,
+  city: PropTypes.string,
+  link: PropTypes.string,
+  imageText: PropTypes.string,
 };
 
 export default Modal;

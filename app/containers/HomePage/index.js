@@ -1,4 +1,4 @@
-import React, { useEffect, memo } from 'react';
+import React, { useEffect, memo, useState } from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { connect } from 'react-redux';
@@ -33,9 +33,49 @@ const key = 'home';
 export function HomePage({ loading, error, dispatchLoadStores, stores }) {
   useInjectReducer({ key, reducer });
   useInjectSaga({ key, saga });
+
   useEffect(() => {
     dispatchLoadStores();
   }, []);
+
+  const [modalOpen, setModalOpen] = useState(false);
+  const [name, setName] = useState('');
+  const [city, setCity] = useState('');
+  const [link, setLink] = useState('');
+  const [imageText, setImageText] = useState('');
+
+  const handleOpenModal = () => {
+    setModalOpen(true);
+  };
+
+  const handleModalSubmit = () => {
+    setModalOpen(false);
+  };
+
+  const handleCloseModal = () => {
+    setModalOpen(false);
+  };
+
+  const handleModalChange = event => {
+    const { target } = event;
+
+    switch (target.name) {
+      case 'name':
+        setName(target.value);
+        break;
+      case 'city':
+        setCity(target.value);
+        break;
+      case 'link':
+        setLink(target.value);
+        break;
+      case 'image-text':
+        setImageText(target.value);
+        break;
+      default:
+        break;
+    }
+  };
 
   return (
     <Main>
@@ -53,7 +93,7 @@ export function HomePage({ loading, error, dispatchLoadStores, stores }) {
             Directory <Small>({stores.length} locals)</Small>
           </H2>
 
-          <Button onClick={() => {}}>Adicionar Local</Button>
+          <Button onClick={handleOpenModal}>Adicionar Local</Button>
         </Header>
 
         <Stores className="row">
@@ -67,7 +107,17 @@ export function HomePage({ loading, error, dispatchLoadStores, stores }) {
         </Button> */}
       </Container>
 
-      <Modal />
+      {modalOpen === true && (
+        <Modal
+          handleSubmit={handleModalSubmit}
+          handleClose={handleCloseModal}
+          handleChange={handleModalChange}
+          name={name}
+          city={city}
+          link={link}
+          imageText={imageText}
+        />
+      )}
     </Main>
   );
 }
