@@ -4,7 +4,7 @@ import { colors } from 'global-styles';
 
 export default styled(Link)`
   display: inline-block;
-  margin: 0 2rem;
+  margin: 0 1rem 0 0;
   text-decoration: none;
   border-radius: 4px;
   -webkit-font-smoothing: antialiased;
@@ -13,7 +13,7 @@ export default styled(Link)`
   cursor: pointer;
   outline: 0;
   font-weight: 500;
-  font-size: 0.5rem;
+  font-size: 0.65rem;
   color: ${colors.white};
 
   &:active {
@@ -22,5 +22,6 @@ export default styled(Link)`
 
   @media (min-width: 576px) {
     font-size: 0.8rem;
+    margin: 0 2rem 0 0;
   }
 `;
