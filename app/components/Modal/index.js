@@ -56,13 +56,28 @@ function Modal(props) {
               />
             </div>
 
-            <div>
+            <div className="modal_input-container">
               <input
-                name="link"
-                className="modal__input modal__input--pointer"
-                type="file"
+                name="image-text"
+                className="modal__input modal__input--file"
+                type="text"
                 placeholder="Foto da faixada"
               />
+
+              <input
+                name="image-file"
+                id="image-file"
+                className="modal__input-file"
+                type="file"
+              />
+
+              <label
+                htmlFor="image-file"
+                className="modal__input-file-trigger"
+                title="Adicionar imagem"
+              >
+                Upload
+              </label>
             </div>
           </div>
 

@@ -1,4 +1,4 @@
-$min-width-overlay: 720px;
+$primaryColor: #0579ff;
 
 .modal__overlay {
   display: block;
@@ -32,7 +32,7 @@ $min-width-overlay: 720px;
   top: -3rem;
 
   @media (min-width: 576px) {
-    max-width: 40rem;
+    max-width: 35rem;
   }
 }
 
@@ -76,6 +76,10 @@ $min-width-overlay: 720px;
   }
 }
 
+.modal_input-container {
+  position: relative;
+}
+
 .modal__input {
   display: block;
   padding: 0.8rem 0.7rem 0.7rem;
@@ -89,7 +93,7 @@ $min-width-overlay: 720px;
 
   &:focus {
     outline: transparent;
-    border-color: #0579ff;
+    border-color: $primaryColor;
   }
 
   @media (min-width: 576px) {
@@ -97,8 +101,31 @@ $min-width-overlay: 720px;
   }
 }
 
-.modal__input--pointer {
+.modal__input--file {
+  padding-right: 6.5rem;
+}
+
+.modal__input-file-trigger {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.45rem;
+  padding: 0.45rem 1.2rem 0.4rem;
+  font-size: 0.65rem;
+  border-radius: 0.1rem;
+  border: 1px solid $primaryColor;
+  color: $primaryColor;
   cursor: pointer;
+
+  @media (min-width: 576px) {
+    top: 0.49rem;
+    right: 0.39rem;
+    padding: 0.55rem 1.5rem 0.5rem;
+    font-size: 0.75rem;
+  }
+}
+
+.modal__input-file {
+  display: none;
 }
 
 .modal__footer {
