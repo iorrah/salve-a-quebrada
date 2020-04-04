@@ -80,14 +80,16 @@ $min-width-overlay: 720px;
   display: block;
   padding: 0.8rem 0.7rem 0.7rem;
   font-size: 0.8rem;
-  border-radius: 0.2rem;
+  border-radius: 0.1rem;
   margin: 0 0 0.7rem;
   width: 100%;
   box-shadow: none;
   border: 1px solid #d8d8d8;
+  transition: border-color 0.2s;
 
   &:focus {
     outline: transparent;
+    border-color: #0579ff;
   }
 
   @media (min-width: 576px) {
