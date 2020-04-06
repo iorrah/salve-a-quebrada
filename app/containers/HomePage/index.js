@@ -23,14 +23,20 @@ import Header from './Header';
 import Stores from './Stores';
 import Small from './Small';
 
-import { loadStores } from './actions';
+import { loadStores, addStore } from './actions';
 import { makeSelectStores } from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 
 const key = 'home';
 
-export function HomePage({ loading, error, dispatchLoadStores, stores }) {
+export function HomePage({
+  loading,
+  error,
+  stores,
+  dispatchLoadStores,
+  dispatchAddStore,
+}) {
   useInjectReducer({ key, reducer });
   useInjectSaga({ key, saga });
 
@@ -49,6 +55,14 @@ export function HomePage({ loading, error, dispatchLoadStores, stores }) {
   };
 
   const handleModalSubmit = () => {
+    const newStore = {
+      name,
+      city,
+      link,
+      imageText,
+    };
+
+    dispatchAddStore(newStore);
     setModalOpen(false);
   };
 
@@ -127,6 +141,7 @@ HomePage.propTypes = {
   loading: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
   dispatchLoadStores: PropTypes.func,
+  dispatchAddStore: PropTypes.func,
 };
 
 const mapStateToProps = createStructuredSelector({
@@ -138,6 +153,7 @@ const mapStateToProps = createStructuredSelector({
 export function mapDispatchToProps(dispatch) {
   return {
     dispatchLoadStores: () => dispatch(loadStores()),
+    dispatchAddStore: store => dispatch(addStore(store)),
   };
 }
 

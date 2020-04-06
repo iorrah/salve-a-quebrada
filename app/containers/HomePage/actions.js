@@ -2,6 +2,9 @@ import {
   LOAD_STORES,
   LOAD_STORES_SUCCESS,
   LOAD_STORES_ERROR,
+  ADD_STORE,
+  ADD_STORE_SUCCESS,
+  ADD_STORE_ERROR,
 } from './constants';
 
 export function loadStores() {
@@ -20,6 +23,26 @@ export function storesLoaded(stores) {
 export function storesLoadingError(error) {
   return {
     type: LOAD_STORES_ERROR,
+    error,
+  };
+}
+
+export function addStore(store) {
+  return {
+    type: ADD_STORE,
+    store,
+  };
+}
+
+export function addStoreSuccess() {
+  return {
+    type: ADD_STORE_SUCCESS,
+  };
+}
+
+export function addStoreError(error) {
+  return {
+    type: ADD_STORE_ERROR,
     error,
   };
 }

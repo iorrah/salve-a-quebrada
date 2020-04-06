@@ -4,6 +4,9 @@ import {
   LOAD_STORES,
   LOAD_STORES_SUCCESS,
   LOAD_STORES_ERROR,
+  ADD_STORE,
+  ADD_STORE_SUCCESS,
+  ADD_STORE_ERROR,
 } from './constants';
 
 export const initialState = {
@@ -25,6 +28,20 @@ const homeReducer = (state = initialState, action) =>
         break;
 
       case LOAD_STORES_ERROR:
+        draft.error = action.error;
+        draft.loading = false;
+        break;
+
+      case ADD_STORE:
+        draft.loading = true;
+        draft.error = false;
+        break;
+
+      case ADD_STORE_SUCCESS:
+        draft.loading = false;
+        break;
+
+      case ADD_STORE_ERROR:
         draft.error = action.error;
         draft.loading = false;
         break;
