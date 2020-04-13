@@ -58,8 +58,9 @@ export function HomePage({
     const newStore = {
       name,
       city,
-      link,
-      imageText,
+      image: imageText,
+      donation: link,
+      status: 0,
     };
 
     dispatchAddStore(newStore);

@@ -23,14 +23,16 @@ export function* getStores() {
 
 export function* addStore(payload) {
   try {
-    while (true) {
-      yield call(request, API_STORES, {
-        method: 'POST',
-        body: JSON.stringify(payload.store),
-      });
+    yield call(request, API_STORES, {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(payload.store),
+    });
 
-      yield put(addStoreSuccess());
-    }
+    yield put(addStoreSuccess());
   } catch (err) {
     yield put(addStoreError(err));
   }
