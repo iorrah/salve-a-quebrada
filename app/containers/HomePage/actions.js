@@ -34,9 +34,10 @@ export function addStore(store) {
   };
 }
 
-export function addStoreSuccess() {
+export function addStoreSuccess(store) {
   return {
     type: ADD_STORE_SUCCESS,
+    store,
   };
 }
 

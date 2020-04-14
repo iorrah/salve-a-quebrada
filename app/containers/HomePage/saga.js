@@ -23,7 +23,7 @@ export function* getStores() {
 
 export function* addStore(payload) {
   try {
-    yield call(request, API_STORES, {
+    const store = yield call(request, API_STORES, {
       method: 'POST',
       headers: {
         Accept: 'application/json',
@@ -32,7 +32,7 @@ export function* addStore(payload) {
       body: JSON.stringify(payload.store),
     });
 
-    yield put(addStoreSuccess());
+    yield put(addStoreSuccess(store));
   } catch (err) {
     yield put(addStoreError(err));
   }

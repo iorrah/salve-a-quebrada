@@ -39,6 +39,7 @@ const homeReducer = (state = initialState, action) =>
 
       case ADD_STORE_SUCCESS:
         draft.loading = false;
+        draft.stores.push(action.store);
         break;
 
       case ADD_STORE_ERROR:
