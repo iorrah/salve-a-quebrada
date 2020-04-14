@@ -12,6 +12,7 @@ import { useInjectSaga } from 'utils/injectSaga';
 
 import { makeSelectLoading, makeSelectError } from 'containers/App/selectors';
 
+import PageHeader from 'components/Header';
 import H2 from 'components/H2';
 import Container from 'components/Container';
 import Store from 'components/Store';
@@ -93,47 +94,51 @@ export function HomePage({
   };
 
   return (
-    <Main>
-      <Helmet>
-        <title>Página Inicial</title>
-        <meta name="description" content="" />
-      </Helmet>
+    <React.Fragment>
+      <PageHeader />
 
-      <Container>
-        <Header>
-          {error && <p>{error}</p>}
-          {loading && <p>Loading...</p>}
+      <Main>
+        <Helmet>
+          <title>Página Inicial</title>
+          <meta name="description" content="" />
+        </Helmet>
 
-          <H2>
-            Directory <Small>({stores.length} locals)</Small>
-          </H2>
+        <Container>
+          <Header>
+            {error && <p>{error}</p>}
+            {loading && <p>Loading...</p>}
 
-          <Button onClick={handleOpenModal}>Adicionar Local</Button>
-        </Header>
+            <H2>
+              Directory <Small>({stores.length} locals)</Small>
+            </H2>
 
-        <Stores className="row">
-          {stores.map(store => (
-            <Store store={store} key={store.id} />
-          ))}
-        </Stores>
+            <Button onClick={handleOpenModal}>Adicionar Local</Button>
+          </Header>
 
-        {/* <Button size="large" onClick={() => {}}>
-          Carregar mais
-        </Button> */}
-      </Container>
+          <Stores className="row">
+            {stores.map(store => (
+              <Store store={store} key={store.id} />
+            ))}
+          </Stores>
 
-      {modalOpen === true && (
-        <Modal
-          handleSubmit={handleModalSubmit}
-          handleClose={handleCloseModal}
-          handleChange={handleModalChange}
-          name={name}
-          city={city}
-          link={link}
-          imageText={imageText}
-        />
-      )}
-    </Main>
+          {/* <Button size="large" onClick={() => {}}>
+            Carregar mais
+          </Button> */}
+        </Container>
+
+        {modalOpen === true && (
+          <Modal
+            handleSubmit={handleModalSubmit}
+            handleClose={handleCloseModal}
+            handleChange={handleModalChange}
+            name={name}
+            city={city}
+            link={link}
+            imageText={imageText}
+          />
+        )}
+      </Main>
+    </React.Fragment>
   );
 }
 
