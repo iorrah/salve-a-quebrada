@@ -109,7 +109,7 @@ export function HomePage({
             {loading && <p>Loading...</p>}
 
             <H2>
-              Directory <Small>({stores.length} locals)</Small>
+              Locais disponíveis: <Small>{stores.length}</Small>
             </H2>
 
             <Button onClick={handleOpenModal}>Adicionar Local</Button>

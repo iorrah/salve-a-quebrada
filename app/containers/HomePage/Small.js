@@ -5,7 +5,7 @@ const Small = styled.small`
   font-size: 0.6rem;
 
   @media (min-width: 576px) {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 `;
 
