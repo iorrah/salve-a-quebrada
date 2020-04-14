@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -20,7 +21,7 @@ import InputWrapper from './InputWrapper';
 import Input from './Input';
 import NoWrap from './NoWrap';
 
-function Header() {
+function Header(props) {
   return (
     <HeaderElement>
       <Carousel />
@@ -31,7 +32,7 @@ function Header() {
 
           <div>
             <HeaderLink to="/">Como funciona?</HeaderLink>
-            <Button onClick={() => {}}>Adicionar Local</Button>
+            <Button onClick={props.handleClick}>Adicionar Local</Button>
           </div>
         </Container>
       </NavBar>
@@ -56,5 +57,9 @@ function Header() {
     </HeaderElement>
   );
 }
+
+Header.propTypes = {
+  handleClick: PropTypes.func,
+};
 
 export default Header;

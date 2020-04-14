@@ -95,7 +95,7 @@ export function HomePage({
 
   return (
     <React.Fragment>
-      <PageHeader />
+      <PageHeader handleClick={handleOpenModal} />
 
       <Main>
         <Helmet>
