@@ -39,6 +39,10 @@ $primaryColor: #0579ff;
 .modal__header {
   padding: 3.5rem 0 0.5rem;
   position: relative;
+
+  &--clean {
+    padding: 0rem 0 4.5rem;
+  }
 }
 
 .modal__title {
@@ -77,6 +81,10 @@ $primaryColor: #0579ff;
 
   @media (min-width: 576px) {
     padding: 0.5rem 3rem 0;
+  }
+
+  &--full {
+    padding: 0;
   }
 }
 

@@ -17,6 +17,7 @@ import H2 from 'components/H2';
 import Container from 'components/Container';
 import Store from 'components/Store';
 import Modal from 'components/Modal';
+import ModalStore from 'components/Modal/ModalStore';
 import Button from 'components/Button';
 
 import Main from './Main';
@@ -46,6 +47,8 @@ export function HomePage({
   }, []);
 
   const [modalOpen, setModalOpen] = useState(false);
+  const [modalStoreOpen, setModalStoreOpen] = useState(false);
+  const [modalSelectedStore, setModalSelectedStore] = useState(false);
   const [name, setName] = useState('');
   const [city, setCity] = useState('');
   const [link, setLink] = useState('');
@@ -53,6 +56,11 @@ export function HomePage({
 
   const handleOpenModal = () => {
     setModalOpen(true);
+  };
+
+  const handleOpenModalStore = store => {
+    setModalSelectedStore(store);
+    setModalStoreOpen(true);
   };
 
   const handleModalSubmit = () => {
@@ -70,6 +78,10 @@ export function HomePage({
 
   const handleCloseModal = () => {
     setModalOpen(false);
+  };
+
+  const handleCloseModalStore = () => {
+    setModalStoreOpen(false);
   };
 
   const handleModalChange = event => {
@@ -95,7 +107,11 @@ export function HomePage({
 
   return (
     <React.Fragment>
-      <PageHeader handleClick={handleOpenModal} stores={stores} />
+      <PageHeader
+        handleClick={handleOpenModal}
+        handleSelectStore={handleOpenModalStore}
+        stores={stores}
+      />
 
       <Main>
         <Helmet>
@@ -135,6 +151,13 @@ export function HomePage({
             city={city}
             link={link}
             imageText={imageText}
+          />
+        )}
+
+        {modalStoreOpen === true && (
+          <ModalStore
+            handleClose={handleCloseModalStore}
+            store={modalSelectedStore}
           />
         )}
       </Main>

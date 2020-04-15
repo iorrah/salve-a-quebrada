@@ -52,6 +52,10 @@ class Header extends React.Component {
     });
   };
 
+  onSuggestionSelected = (event, extra) => {
+    this.props.handleSelectStore(extra.suggestion);
+  };
+
   cleanSearch = search => {
     if (search && search.length) {
       return search.trim().toLowerCase();
@@ -134,6 +138,7 @@ class Header extends React.Component {
                 getSuggestionValue={this.getSuggestionValue}
                 renderSuggestion={this.renderSuggestion}
                 inputProps={inputProps}
+                onSuggestionSelected={this.onSuggestionSelected}
               />
             </InputWrapper>
           </Content>
@@ -149,6 +154,7 @@ Header.defaultProps = {
 
 Header.propTypes = {
   handleClick: PropTypes.func,
+  handleSelectStore: PropTypes.func,
   stores: PropTypes.array,
 };
 
