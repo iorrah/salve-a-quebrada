@@ -52,18 +52,37 @@ class Header extends React.Component {
     });
   };
 
-  getSuggestions = value => {
-    const inputValue = value.trim().toLowerCase();
-    const inputLength = inputValue.length;
-    const { stores } = this.props;
-
-    if (inputLength === 0) {
-      return [];
+  cleanSearch = search => {
+    if (search && search.length) {
+      return search.trim().toLowerCase();
     }
 
-    return stores.filter(
-      lang => lang.name.toLowerCase().slice(0, inputLength) === inputValue,
-    );
+    return '';
+  };
+
+  searchInSuggestions = search => store => {
+    const decomposed = this.cleanSearch(store.name);
+    const stringMatches = decomposed === search;
+    const stringContains = decomposed.indexOf(search) >= 0;
+    return stringMatches || stringContains;
+  };
+
+  getSuggestions = value => {
+    const search = this.cleanSearch(value);
+    const { stores } = this.props;
+    return stores.filter(this.searchInSuggestions(search));
+  };
+
+  getSuggestions = value => {
+    const search = this.cleanSearch(value);
+    const { stores } = this.props;
+
+    return stores.filter(store => {
+      const decomposed = this.cleanSearch(store.name);
+      const stringMatches = decomposed === search;
+      const stringContains = decomposed.indexOf(search) >= 0;
+      return stringMatches || stringContains;
+    });
   };
 
   getSuggestionValue = suggestion => suggestion.name;
