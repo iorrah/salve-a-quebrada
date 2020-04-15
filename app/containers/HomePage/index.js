@@ -95,7 +95,7 @@ export function HomePage({
 
   return (
     <React.Fragment>
-      <PageHeader handleClick={handleOpenModal} />
+      <PageHeader handleClick={handleOpenModal} stores={stores} />
 
       <Main>
         <Helmet>

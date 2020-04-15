@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Autosuggest from 'react-autosuggest';
+
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -18,48 +20,117 @@ import Content from './Content';
 import Title from './Title';
 import SubTitle from './SubTitle';
 import InputWrapper from './InputWrapper';
-import Input from './Input';
 import NoWrap from './NoWrap';
 
-function Header(props) {
-  return (
-    <HeaderElement>
-      <Carousel />
+class Header extends React.Component {
+  constructor() {
+    super();
 
-      <NavBar>
-        <Container className="container">
-          <Logo to="/">Salve a Quebrada</Logo>
+    this.state = {
+      value: '',
+      suggestions: [],
+    };
 
-          <div>
-            <HeaderLink to="/">Como funciona?</HeaderLink>
-            <Button onClick={props.handleClick}>Adicionar Local</Button>
-          </div>
-        </Container>
-      </NavBar>
+    this.getSuggestions = this.getSuggestions.bind(this);
+  }
 
-      <Hero>
-        <Content>
-          <Title>
-            Seu lugar favorito na cidade pode fechar pra sempre. Ajude a
-            salvá-lo.
-          </Title>
+  onChange = (event, { newValue }) => {
+    this.setState({
+      value: newValue,
+    });
+  };
 
-          <SubTitle>
-            Doe um vale-presente pra impedir demissões e falências{' '}
-            <NoWrap>causadas pelo COVID-19</NoWrap>
-          </SubTitle>
+  onSuggestionsFetchRequested = ({ value }) => {
+    this.setState({
+      suggestions: this.getSuggestions(value),
+    });
+  };
 
-          <InputWrapper>
-            <Input placeholder="Busque por lugares que você ama" type="text" />
-          </InputWrapper>
-        </Content>
-      </Hero>
-    </HeaderElement>
-  );
+  onSuggestionsClearRequested = () => {
+    this.setState({
+      suggestions: [],
+    });
+  };
+
+  getSuggestions = value => {
+    const inputValue = value.trim().toLowerCase();
+    const inputLength = inputValue.length;
+    const { stores } = this.props;
+
+    if (inputLength === 0) {
+      return [];
+    }
+
+    return stores.filter(
+      lang => lang.name.toLowerCase().slice(0, inputLength) === inputValue,
+    );
+  };
+
+  getSuggestionValue = suggestion => suggestion.name;
+
+  renderSuggestion = suggestion => <div>{suggestion.name}</div>;
+
+  render() {
+    const { value, suggestions } = this.state;
+
+    const inputProps = {
+      placeholder: 'Busque por lugares que você ama',
+      value,
+      onChange: this.onChange,
+      className: 'auto-complete__input',
+    };
+
+    return (
+      <HeaderElement>
+        <Carousel />
+
+        <NavBar>
+          <Container className="container">
+            <Logo to="/">Salve a Quebrada</Logo>
+
+            <div>
+              <HeaderLink to="/">Como funciona?</HeaderLink>
+              <Button onClick={this.props.handleClick}>Adicionar Local</Button>
+            </div>
+          </Container>
+        </NavBar>
+
+        <Hero>
+          <Content>
+            <Title>
+              Seu lugar favorito na cidade pode fechar pra sempre. Ajude a
+              salvá-lo.
+            </Title>
+
+            <SubTitle>
+              Doe um vale-presente pra impedir demissões e falências{' '}
+              <NoWrap>causadas pelo COVID-19</NoWrap>
+            </SubTitle>
+
+            <InputWrapper>
+              <Autosuggest
+                suggestions={suggestions}
+                onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
+                onSuggestionsClearRequested={this.onSuggestionsClearRequested}
+                getSuggestionValue={this.getSuggestionValue}
+                renderSuggestion={this.renderSuggestion}
+                inputProps={inputProps}
+              />
+            </InputWrapper>
+          </Content>
+        </Hero>
+      </HeaderElement>
+    );
+  }
 }
+
+Header.defaultProps = {
+  stores: [],
+};
 
 Header.propTypes = {
   handleClick: PropTypes.func,
+  stores: PropTypes.array,
 };
 
 export default Header;
