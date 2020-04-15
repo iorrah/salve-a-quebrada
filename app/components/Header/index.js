@@ -96,7 +96,7 @@ class Header extends React.Component {
       placeholder: 'Busque por lugares que você ama',
       value,
       onChange: this.onChange,
-      className: 'auto-complete__input',
+      className: 'react-autosuggest__input',
     };
 
     return (
