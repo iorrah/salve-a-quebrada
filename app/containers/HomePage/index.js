@@ -50,7 +50,7 @@ export function HomePage({
   const [modalStoreOpen, setModalStoreOpen] = useState(false);
   const [modalSelectedStore, setModalSelectedStore] = useState(false);
   const [name, setName] = useState('');
-  const [city, setCity] = useState('');
+  const [address, setAddress] = useState('');
   const [link, setLink] = useState('');
   const [imageText, setImageText] = useState('');
 
@@ -66,7 +66,7 @@ export function HomePage({
   const handleModalSubmit = () => {
     const newStore = {
       name,
-      city,
+      address,
       image: imageText,
       donation: link,
       status: 0,
@@ -91,8 +91,8 @@ export function HomePage({
       case 'name':
         setName(target.value);
         break;
-      case 'city':
-        setCity(target.value);
+      case 'address':
+        setAddress(target.value);
         break;
       case 'link':
         setLink(target.value);
@@ -148,7 +148,7 @@ export function HomePage({
             handleClose={handleCloseModal}
             handleChange={handleModalChange}
             name={name}
-            city={city}
+            address={address}
             link={link}
             imageText={imageText}
           />

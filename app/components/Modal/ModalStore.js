@@ -45,7 +45,7 @@ function ModalStore(props) {
 
             <Details>
               <H3>{store.name}</H3>
-              <P>{store.city}</P>
+              <P>{store.address}</P>
             </Details>
           </div>
 

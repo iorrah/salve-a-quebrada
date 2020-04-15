@@ -29,7 +29,7 @@ function Store(props) {
           <H3>{store.name}</H3>
 
           <div className="mb-3">
-            <P>{store.city}</P>
+            <P>{store.address}</P>
           </div>
 
           <Button type="hollow" target="_blank" href={store.donation}>

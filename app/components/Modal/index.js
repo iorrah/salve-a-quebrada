@@ -42,11 +42,11 @@ function Modal(props) {
 
             <div>
               <input
-                name="city"
+                name="address"
                 className="modal__input"
                 type="text"
-                placeholder="Cidade"
-                value={props.city}
+                placeholder="Endereço completo"
+                value={props.address}
                 onChange={props.handleChange}
               />
             </div>
@@ -103,7 +103,7 @@ Modal.propTypes = {
   handleClose: PropTypes.func,
   handleChange: PropTypes.func,
   name: PropTypes.string,
-  city: PropTypes.string,
+  address: PropTypes.string,
   link: PropTypes.string,
   imageText: PropTypes.string,
 };
