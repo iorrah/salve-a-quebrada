@@ -1,8 +1,7 @@
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { colors } from 'global-styles';
 
-export default styled(Link)`
+export default styled.button`
   display: inline-block;
   margin: 0 1rem 0 0;
   text-decoration: none;
@@ -15,9 +14,18 @@ export default styled(Link)`
   font-weight: 500;
   font-size: 0.65rem;
   color: ${colors.white};
+  background: none;
+  border: 0;
+  padding: 0;
 
   &:active {
     color: ${colors.white};
+  }
+
+  &:focus {
+    outline: transparent;
+    background: none;
+    border: 0;
   }
 
   @media (min-width: 576px) {
