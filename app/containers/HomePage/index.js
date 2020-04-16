@@ -17,6 +17,7 @@ import H2 from 'components/H2';
 import Container from 'components/Container';
 import Store from 'components/Store';
 import Modal from 'components/Modal';
+import ModalFAQ from 'components/ModalFAQ';
 import ModalStore from 'components/Modal/ModalStore';
 import Button from 'components/Button';
 
@@ -47,6 +48,7 @@ export function HomePage({
   }, []);
 
   const [modalOpen, setModalOpen] = useState(false);
+  const [modalFAQOpen, setModalFAQOpen] = useState(false);
   const [modalStoreOpen, setModalStoreOpen] = useState(false);
   const [modalSelectedStore, setModalSelectedStore] = useState(false);
   const [name, setName] = useState('');
@@ -56,6 +58,10 @@ export function HomePage({
 
   const handleOpenModal = () => {
     setModalOpen(true);
+  };
+
+  const handleOpenModalFAQ = () => {
+    setModalFAQOpen(true);
   };
 
   const handleOpenModalStore = store => {
@@ -84,6 +90,10 @@ export function HomePage({
     setModalStoreOpen(false);
   };
 
+  const handleCloseModalFAQ = () => {
+    setModalFAQOpen(false);
+  };
+
   const handleModalChange = event => {
     const { target } = event;
 
@@ -109,6 +119,7 @@ export function HomePage({
     <React.Fragment>
       <PageHeader
         handleClick={handleOpenModal}
+        handleClickFAQ={handleOpenModalFAQ}
         handleSelectStore={handleOpenModalStore}
         stores={stores}
       />
@@ -152,6 +163,10 @@ export function HomePage({
             link={link}
             imageText={imageText}
           />
+        )}
+
+        {modalFAQOpen === true && (
+          <ModalFAQ handleClose={handleCloseModalFAQ} />
         )}
 
         {modalStoreOpen === true && (

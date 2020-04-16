@@ -112,7 +112,9 @@ class Header extends React.Component {
             <Logo to="/">Salve a Quebrada</Logo>
 
             <div>
-              <HeaderLink to="/">Como funciona?</HeaderLink>
+              <HeaderLink onClick={this.props.handleClickFAQ}>
+                Como funciona?
+              </HeaderLink>
               <Button onClick={this.props.handleClick}>Adicionar Local</Button>
             </div>
           </Container>
@@ -155,6 +157,7 @@ Header.defaultProps = {
 Header.propTypes = {
   handleClick: PropTypes.func,
   handleSelectStore: PropTypes.func,
+  handleClickFAQ: PropTypes.func,
   stores: PropTypes.array,
 };
 
