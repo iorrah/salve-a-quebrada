@@ -4,5 +4,5 @@ export default styled.h4`
   border: 0;
   border-top: 1px solid #efefef;
   margin: 0;
-  padding: 1rem 1.5rem;
+  padding: 1.5rem 1.5rem 1rem;
 `;

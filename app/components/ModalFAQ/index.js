@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Cross from 'images/cross.svg';
+import questions from './questions';
 
 import Overlay from './Overlay';
 import Aligner from './Aligner';
@@ -15,29 +16,6 @@ import Collapsable from './Collapsable';
 import Question from './Question';
 import Answer from './Answer';
 import Footer from './Footer';
-
-const questions = [
-  {
-    id: 1,
-    question: 'O que é Salve a Quebrada?',
-    answer: 'Salve a Quebrada é um diretório de links.',
-  },
-  {
-    id: 2,
-    question: 'O que é Salve a Quebrada?',
-    answer: 'Salve a Quebrada é um diretório de links.',
-  },
-  {
-    id: 3,
-    question: 'O que é Salve a Quebrada?',
-    answer: 'Salve a Quebrada é um diretório de links.',
-  },
-  {
-    id: 4,
-    question: 'O que é Salve a Quebrada?',
-    answer: 'Salve a Quebrada é um diretório de links.',
-  },
-];
 
 function ModalFAQ(props) {
   return (
@@ -59,7 +37,16 @@ function ModalFAQ(props) {
           <Body>
             <H4>Para apoiadores</H4>
 
-            {questions.map(item => (
+            {questions.supporters.map(item => (
+              <Collapsable key={item.id}>
+                <Question>{item.question}</Question>
+                <Answer>{item.answer}</Answer>
+              </Collapsable>
+            ))}
+
+            <H4>Para locais</H4>
+
+            {questions.locals.map(item => (
               <Collapsable key={item.id}>
                 <Question>{item.question}</Question>
                 <Answer>{item.answer}</Answer>
