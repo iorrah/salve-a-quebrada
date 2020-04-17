@@ -56,6 +56,13 @@ export function HomePage({
   const [link, setLink] = useState('');
   const [imageText, setImageText] = useState('');
 
+  const cleanDraftStore = () => {
+    setName('');
+    setAddress('');
+    setLink('');
+    setImageText('');
+  };
+
   const handleOpenModal = () => {
     setModalOpen(true);
   };
@@ -85,6 +92,7 @@ export function HomePage({
 
     dispatchAddStore(newStore);
     setModalOpen(false);
+    cleanDraftStore();
   };
 
   const handleCloseModal = () => {
