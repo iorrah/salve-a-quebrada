@@ -12,15 +12,14 @@ function Accordion(props) {
   return (
     <Collapsable onClick={handleClick}>
       <Question>{props.question}</Question>
-
       {answerOpened && <Answer>{props.answer}</Answer>}
     </Collapsable>
   );
 }
 
 Accordion.propTypes = {
-  question: PropTypes.object,
-  answer: PropTypes.object,
+  question: PropTypes.string,
+  answer: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
 };
 
 export default Accordion;
