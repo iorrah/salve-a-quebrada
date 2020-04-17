@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import PropTypes from 'prop-types';
 
 import Button from 'components/Button';
@@ -7,6 +7,18 @@ import Cross from 'images/cross.svg';
 import 'styles.scss';
 
 function Modal(props) {
+  const inputName = useRef(null);
+
+  const handleFormSubmit = event => {
+    event.preventDefault();
+
+    if (props.name === '') {
+      inputName.current.focus();
+    } else {
+      props.handleSubmit();
+    }
+  };
+
   return (
     <div className="modal__overlay">
       <div className="modal__aligner">
@@ -28,70 +40,73 @@ function Modal(props) {
             </button>
           </div>
 
-          <div className="modal__body">
-            <div>
-              <input
-                name="name"
-                className="modal__input"
-                type="text"
-                placeholder="Nome do local"
-                value={props.name}
-                onChange={props.handleChange}
-              />
+          <form onSubmit={handleFormSubmit}>
+            <div className="modal__body">
+              <div>
+                <input
+                  ref={inputName}
+                  name="name"
+                  className="modal__input"
+                  type="text"
+                  placeholder="Nome do local *"
+                  value={props.name}
+                  onChange={props.handleChange}
+                />
+              </div>
+
+              <div>
+                <input
+                  name="address"
+                  className="modal__input"
+                  type="text"
+                  placeholder="Endereço completo"
+                  value={props.address}
+                  onChange={props.handleChange}
+                />
+              </div>
+
+              <div>
+                <input
+                  name="link"
+                  className="modal__input"
+                  type="text"
+                  placeholder="Link para doação"
+                  value={props.link}
+                  onChange={props.handleChange}
+                />
+              </div>
+
+              <div className="modal_input-container">
+                <input
+                  name="image-text"
+                  className="modal__input modal__input--file"
+                  type="text"
+                  placeholder="Foto da faixada"
+                  value={props.imageText}
+                  onChange={props.handleChange}
+                />
+
+                {/* <input
+                  name="image-file"
+                  id="image-file"
+                  className="modal__input-file"
+                  type="file"
+                /> */}
+
+                {/* <label
+                  htmlFor="image-file"
+                  className="modal__input-file-trigger"
+                  title="Adicionar imagem"
+                >
+                  Upload
+                </label> */}
+              </div>
             </div>
 
-            <div>
-              <input
-                name="address"
-                className="modal__input"
-                type="text"
-                placeholder="Endereço completo"
-                value={props.address}
-                onChange={props.handleChange}
-              />
+            <div className="modal__footer">
+              <Button type="submit">Adicionar Local</Button>
             </div>
-
-            <div>
-              <input
-                name="link"
-                className="modal__input"
-                type="text"
-                placeholder="Link para doação"
-                value={props.link}
-                onChange={props.handleChange}
-              />
-            </div>
-
-            <div className="modal_input-container">
-              <input
-                name="image-text"
-                className="modal__input modal__input--file"
-                type="text"
-                placeholder="Foto da faixada"
-                value={props.imageText}
-                onChange={props.handleChange}
-              />
-
-              {/* <input
-                name="image-file"
-                id="image-file"
-                className="modal__input-file"
-                type="file"
-              /> */}
-
-              {/* <label
-                htmlFor="image-file"
-                className="modal__input-file-trigger"
-                title="Adicionar imagem"
-              >
-                Upload
-              </label> */}
-            </div>
-          </div>
-
-          <div className="modal__footer">
-            <Button onClick={props.handleSubmit}>Adicionar Local</Button>
-          </div>
+          </form>
         </div>
       </div>
     </div>
