@@ -110,7 +110,7 @@ function Modal(props) {
                   name="image-text"
                   className="modal__input modal__input--file"
                   type="text"
-                  placeholder="Foto da faixada"
+                  placeholder="URL para uma foto da faixada"
                   value={props.imageText}
                   onChange={props.handleChange}
                 />
