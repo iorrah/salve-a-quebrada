@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="6px" viewBox="0 0 9 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Mask</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Page-11" transform="translate(-1357.000000, -573.000000)" fill="#CCCCCC">
+            <g id="ui-Answer" transform="translate(611.000000, 554.000000)">
+                <path d="M748.514717,17.5147166 C748.230356,17.7990775 748.230104,18.26004 748.514155,18.5447108 L751.343833,21.3805668 L751.343833,21.3805668 L748.514155,24.2164228 C748.230104,24.5010936 748.230356,24.9620561 748.514717,25.246417 C748.798987,25.5306871 749.25988,25.5306871 749.54415,25.246417 L753.41,21.3805668 L753.41,21.3805668 L749.54415,17.5147166 C749.25988,17.2304465 748.798987,17.2304465 748.514717,17.5147166 Z" id="Mask" transform="translate(750.705000, 21.380567) scale(-1, 1) rotate(-270.000000) translate(-750.705000, -21.380567) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

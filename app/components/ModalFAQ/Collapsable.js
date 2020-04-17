@@ -6,4 +6,5 @@ export default styled.div`
   border: 0;
   border-top: 1px solid #efefef;
   cursor: pointer;
+  position: relative;
 `;
