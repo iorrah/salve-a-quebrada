@@ -4,8 +4,8 @@ import Accordion from './Accordion';
 function LocalQ1() {
   return (
     <Accordion
-      question="O que é Salve a Quebrada?"
-      answer="O que é Salve a Quebrada?"
+      question="Por que minha empresa não aparece nos seus resultados de pesquisa?"
+      answer="Para adicionar locais ao site, clique aqui."
     />
   );
 }

@@ -4,8 +4,8 @@ import Accordion from './Accordion';
 function SupporterQ2() {
   return (
     <Accordion
-      question="O que é Salve a Quebrada?"
-      answer="O que é Salve a Quebrada?"
+      question="Por que o meu lugar favorito não está nesse site?"
+      answer="Para adicionar seus locais favoritos no site, clique aqui."
     />
   );
 }
