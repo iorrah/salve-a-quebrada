@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { createStructuredSelector } from 'reselect';
+import { toast } from 'react-toastify';
 
 import 'static/bootstrap-grid.css';
 
@@ -93,6 +94,11 @@ export function HomePage({
     dispatchAddStore(newStore);
     setModalOpen(false);
     cleanDraftStore();
+
+    toast.success('Adicionado com sucesso!', {
+      position: 'bottom-center',
+      autoClose: 3000,
+    });
   };
 
   const handleCloseModal = () => {

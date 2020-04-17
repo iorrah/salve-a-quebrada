@@ -10,11 +10,15 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import { Switch, Route } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import HomePage from 'containers/HomePage/Loadable';
 import FeaturePage from 'containers/FeaturePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
+
 import Footer from 'components/Footer';
+import CloseToaster from 'components/CloseToaster';
 
 import GlobalStyle from '../../global-styles';
 
@@ -33,6 +37,8 @@ export default function App() {
       >
         <meta name="description" content="" />
       </Helmet>
+
+      <ToastContainer hideProgressBar closeButton={<CloseToaster />} />
 
       <Switch>
         <Route exact path="/" component={HomePage} />
