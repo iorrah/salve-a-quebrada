@@ -12,7 +12,7 @@ function Modal(props) {
 
   useEffect(() => {
     inputName.current.focus();
-  });
+  }, []);
 
   const getIsNameValid = () => {
     if (props.name === '') {
