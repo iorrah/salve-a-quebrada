@@ -5,4 +5,5 @@ export default styled.div`
   margin: 0;
   border: 0;
   border-top: 1px solid #efefef;
+  cursor: pointer;
 `;
