@@ -7,6 +7,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import 'styles.scss';
 
+import MagnifyingImage from 'images/magnifying.svg';
 import Button from 'components/Button';
 
 import Container from './Container';
@@ -21,6 +22,7 @@ import Title from './Title';
 import SubTitle from './SubTitle';
 import InputWrapper from './InputWrapper';
 import NoWrap from './NoWrap';
+import MagnifyingIcon from './MagnifyingIcon';
 
 class Header extends React.Component {
   constructor() {
@@ -142,6 +144,8 @@ class Header extends React.Component {
                 inputProps={inputProps}
                 onSuggestionSelected={this.onSuggestionSelected}
               />
+
+              <MagnifyingIcon src={MagnifyingImage} />
             </InputWrapper>
           </Content>
         </Hero>
