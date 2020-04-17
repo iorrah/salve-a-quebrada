@@ -69,6 +69,11 @@ export function HomePage({
     setModalStoreOpen(true);
   };
 
+  const handleOpenModalAddStore = () => {
+    handleCloseModalFAQ();
+    handleOpenModal();
+  };
+
   const handleModalSubmit = () => {
     const newStore = {
       name,
@@ -166,7 +171,10 @@ export function HomePage({
         )}
 
         {modalFAQOpen === true && (
-          <ModalFAQ handleClose={handleCloseModalFAQ} />
+          <ModalFAQ
+            handleClose={handleCloseModalFAQ}
+            handleOpenModalAddStore={handleOpenModalAddStore}
+          />
         )}
 
         {modalStoreOpen === true && (

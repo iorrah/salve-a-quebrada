@@ -43,13 +43,17 @@ function ModalFAQ(props) {
             <H4>Para apoiadores</H4>
 
             <SupporterQ1 />
-            <SupporterQ2 />
+
+            <SupporterQ2
+              handleOpenModalAddStore={props.handleOpenModalAddStore}
+            />
+
             <SupporterQ3 />
             <SupporterQ4 />
 
             <H4>Para locais</H4>
 
-            <LocalQ1 />
+            <LocalQ1 handleOpenModalAddStore={props.handleOpenModalAddStore} />
             <LocalQ2 />
             <LocalQ3 />
           </Body>
@@ -63,6 +67,7 @@ function ModalFAQ(props) {
 
 ModalFAQ.propTypes = {
   handleClose: PropTypes.func,
+  handleOpenModalAddStore: PropTypes.func,
 };
 
 export default ModalFAQ;
