@@ -1,0 +1,21 @@
+.Toastify__toast.Toastify__toast--success {
+  background-color: map-get($colors, 'meteor');
+  border-radius: 3px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.52);
+  color: map-get($colors, 'white');
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 1rem;
+}
+
+.Toastify__toast-close-icon {
+  color: map-get($colors, 'neon');
+  font-family: inherit;
+  font-style: normal;
+  font-size: 0.8rem;
+  font-weight: 600;
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+}
