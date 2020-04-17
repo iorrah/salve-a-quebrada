@@ -7,10 +7,13 @@ function LocalQ2() {
     <span>
       O primeiro passo é verificar o seu provedor de loja online. Muitos
       oferecem seus próprios recursos de cartão-presente (por exemplo,
-      Wordpress, Magento, Wix, etc.) e outros se integram a fornecedores
-      específicos de terceiros. Se o seu provedor de loja online não oferecer
-      cartões-presente ou integrar-se a terceiros, considere plataformas de
-      crowdfunding como <Link label="Catarse" href="https://www.catarse.me" />,{' '}
+      <Link label="Wordpress" href="https://wordpress.com" />,{' '}
+      <Link label="Magento" href="https://magento.com" />,{' '}
+      <Link label="Wix" href="https://www.wix.com" />, etc.) e outros se
+      integram a fornecedores específicos de terceiros. Se o seu provedor de
+      loja online não oferecer cartões-presente ou integrar-se a terceiros,
+      considere plataformas de crowdfunding como{' '}
+      <Link label="Catarse" href="https://www.catarse.me" />,{' '}
       <Link label="Benfeitoria" href="https://benfeitoria.com" /> e{' '}
       <Link label="Apoia-se" href="https://apoia.se" />.
     </span>
