@@ -8,15 +8,39 @@ import 'styles.scss';
 
 function Modal(props) {
   const inputName = useRef(null);
+  const inputAddress = useRef(null);
+
+  const getIsNameValid = () => {
+    if (props.name === '') {
+      inputName.current.focus();
+      return false;
+    }
+
+    return true;
+  };
+
+  const getIsAddressValid = () => {
+    if (props.address === '') {
+      inputAddress.current.focus();
+      return false;
+    }
+
+    return true;
+  };
 
   const handleFormSubmit = event => {
     event.preventDefault();
 
-    if (props.name === '') {
-      inputName.current.focus();
-    } else {
-      props.handleSubmit();
+    if (!getIsNameValid()) {
+      return false;
     }
+
+    if (!getIsAddressValid()) {
+      return false;
+    }
+
+    props.handleSubmit();
+    return true;
   };
 
   return (
@@ -56,10 +80,11 @@ function Modal(props) {
 
               <div>
                 <input
+                  ref={inputAddress}
                   name="address"
                   className="modal__input"
                   type="text"
-                  placeholder="Endereço completo"
+                  placeholder="Endereço completo *"
                   value={props.address}
                   onChange={props.handleChange}
                 />
