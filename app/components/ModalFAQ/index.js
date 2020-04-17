@@ -11,8 +11,15 @@ import Close from './Close';
 import CloseImage from './CloseImage';
 import Body from './Body';
 import H4 from './H4';
-import Accordion from './Accordion';
 import Footer from './Footer';
+
+import SupporterQ1 from './SupporterQ1';
+import SupporterQ2 from './SupporterQ2';
+import SupporterQ3 from './SupporterQ3';
+
+import LocalQ1 from './LocalQ1';
+import LocalQ2 from './LocalQ2';
+import LocalQ3 from './LocalQ3';
 
 function ModalFAQ(props) {
   return (
@@ -34,37 +41,15 @@ function ModalFAQ(props) {
           <Body>
             <H4>Para apoiadores</H4>
 
-            <Accordion
-              question="O que é Salve a Quebrada?"
-              answer="O que é Salve a Quebrada?"
-            />
-
-            <Accordion
-              question="O que é Salve a Quebrada?"
-              answer="O que é Salve a Quebrada?"
-            />
-
-            <Accordion
-              question="O que é Salve a Quebrada?"
-              answer="O que é Salve a Quebrada?"
-            />
+            <SupporterQ1 />
+            <SupporterQ2 />
+            <SupporterQ3 />
 
             <H4>Para locais</H4>
 
-            <Accordion
-              question="O que é Salve a Quebrada?"
-              answer="O que é Salve a Quebrada?"
-            />
-
-            <Accordion
-              question="O que é Salve a Quebrada?"
-              answer="O que é Salve a Quebrada?"
-            />
-
-            <Accordion
-              question="O que é Salve a Quebrada?"
-              answer="O que é Salve a Quebrada?"
-            />
+            <LocalQ1 />
+            <LocalQ2 />
+            <LocalQ3 />
           </Body>
 
           <Footer />
