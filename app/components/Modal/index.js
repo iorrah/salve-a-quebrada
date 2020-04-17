@@ -72,20 +72,20 @@ function Modal(props) {
                 onChange={props.handleChange}
               />
 
-              <input
+              {/* <input
                 name="image-file"
                 id="image-file"
                 className="modal__input-file"
                 type="file"
-              />
+              /> */}
 
-              <label
+              {/* <label
                 htmlFor="image-file"
                 className="modal__input-file-trigger"
                 title="Adicionar imagem"
               >
                 Upload
-              </label>
+              </label> */}
             </div>
           </div>
 
