@@ -17,7 +17,7 @@ var __wpo = {
       "./1473361f0320627076e31a8c67d0e14b.png",
       "./c8f4c6506e10d724856c0e7e582af193.png",
       "./9d7bcc930ffd1be7448d614f8f737e6d.png",
-      "./runtime.48ef61ab99ccc339355b.js",
+      "./runtime.31d5842ca9ef981ec4cf.js",
       "./main.92b9113157a63bf976d1.chunk.js.LICENSE.txt",
       "./"
     ],
@@ -70,16 +70,16 @@ var __wpo = {
     "57e31b205c8fd1a8cad40db118a489b266a1f192": "./npm.react-redux.f9a47373bf5507c04527.chunk.js",
     "e5ec46febf098551eab920589fb5cec3ba47230b": "./npm.react-toastify.96d5c3d033145653ed76.chunk.js",
     "163931f072b62078b0ddd4b04ad31f4e282675cd": "./npm.react-transition-group.f82a127e54d20387c537.chunk.js",
-    "95f6d1bb2cd877036d931723840138a9338ec1db": "./runtime.48ef61ab99ccc339355b.js",
+    "5750defb69818d0a196d56710458d87a04043521": "./runtime.31d5842ca9ef981ec4cf.js",
     "63e3bcb62abbb0cd16db05f2c23e021418b05679": "./13.65a975f16196171a55b4.chunk.js",
     "bc4417cd1832ae36932134a0bf06a4bde78559d1": "./14.80cf181eecc714c251be.chunk.js",
     "528421186dfa176d103bd92bfc3a6101a2c8cae1": "./15.9629b3d19d4ab8f2dedb.chunk.js",
     "a08192864711307478f30b2a169ede7fba97cce0": "./main.92b9113157a63bf976d1.chunk.js.LICENSE.txt",
-    "4028d226416a4cdf5981e9d66cd4f7988f0f31c1": "./"
+    "7b67000539f2c641a5d031a4864ce284cbda81c6": "./"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "4/20/2020, 5:40:54 PM",
+  "version": "4/20/2020, 5:42:48 PM",
   "name": "webpack-offline",
   "pluginVersion": "5.0.6",
   "relativePaths": true
@@ -164,7 +164,7 @@ var __wpo = {
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/salve-a-quebrada/";
+/******/ 	__webpack_require__.p = "/salve-a-quebrada";
 /******/
 /******/
 /******/ 	// Load entry module and return exports
