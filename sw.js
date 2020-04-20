@@ -18,7 +18,7 @@ var __wpo = {
       "./c8f4c6506e10d724856c0e7e582af193.png",
       "./9d7bcc930ffd1be7448d614f8f737e6d.png",
       "./runtime.48ef61ab99ccc339355b.js",
-      "./main.c17c059ae566d0c16854.chunk.js.LICENSE.txt",
+      "./main.92b9113157a63bf976d1.chunk.js.LICENSE.txt",
       "./"
     ],
     "additional": [
@@ -26,7 +26,7 @@ var __wpo = {
       "./npm.css-loader.8f60f746e9c62fd55421.chunk.js",
       "./npm.redux-saga.49e36373cb2d113df803.chunk.js",
       "./npm.webpack.ad6f4021e78565dadbe7.chunk.js",
-      "./main.c17c059ae566d0c16854.chunk.js",
+      "./main.92b9113157a63bf976d1.chunk.js",
       "./npm.babel.524524bcea475bf42ad6.chunk.js",
       "./npm.connected-react-router.bf0b95778a4baa99b4c5.chunk.js",
       "./npm.lodash.d1032c6eae05b1256830.chunk.js",
@@ -62,7 +62,7 @@ var __wpo = {
     "fda938959a5bcb6b51135c44d541cd47abc9e910": "./npm.css-loader.8f60f746e9c62fd55421.chunk.js",
     "5eea83f5856b8f77dda17c74bedd31d51d08ff17": "./npm.redux-saga.49e36373cb2d113df803.chunk.js",
     "606bdc668802534e48ef14560ced198a1772d97a": "./npm.webpack.ad6f4021e78565dadbe7.chunk.js",
-    "ca8c169b5e371dc1a8973d89eecc318658a8473d": "./main.c17c059ae566d0c16854.chunk.js",
+    "d1936b70c948127301fd90c291b1e6c759b1f9e8": "./main.92b9113157a63bf976d1.chunk.js",
     "1d7ae6d3e6cd5d8eb6f21eb94e28ed23720ce8c7": "./npm.babel.524524bcea475bf42ad6.chunk.js",
     "7ece45f0e1ec5694582d75cc665ef7535e40636f": "./npm.connected-react-router.bf0b95778a4baa99b4c5.chunk.js",
     "baa0ee4cc9732cf3b758f6841f127812237ecb5e": "./npm.lodash.d1032c6eae05b1256830.chunk.js",
@@ -74,12 +74,12 @@ var __wpo = {
     "63e3bcb62abbb0cd16db05f2c23e021418b05679": "./13.65a975f16196171a55b4.chunk.js",
     "bc4417cd1832ae36932134a0bf06a4bde78559d1": "./14.80cf181eecc714c251be.chunk.js",
     "528421186dfa176d103bd92bfc3a6101a2c8cae1": "./15.9629b3d19d4ab8f2dedb.chunk.js",
-    "a08192864711307478f30b2a169ede7fba97cce0": "./main.c17c059ae566d0c16854.chunk.js.LICENSE.txt",
-    "fc8649129160f9ac8f0d7ff34646ca376b1be3ce": "./"
+    "a08192864711307478f30b2a169ede7fba97cce0": "./main.92b9113157a63bf976d1.chunk.js.LICENSE.txt",
+    "4028d226416a4cdf5981e9d66cd4f7988f0f31c1": "./"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "4/20/2020, 5:34:36 PM",
+  "version": "4/20/2020, 5:36:56 PM",
   "name": "webpack-offline",
   "pluginVersion": "5.0.6",
   "relativePaths": true
