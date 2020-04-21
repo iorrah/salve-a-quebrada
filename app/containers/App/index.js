@@ -7,14 +7,14 @@
  */
 
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
-import { Switch, Route } from 'react-router-dom';
+import { HashRouter, Route, withRouter, Switch } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import HomePage from 'containers/HomePage/Loadable';
-import FeaturePage from 'containers/FeaturePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 
 import Footer from 'components/Footer';
@@ -28,7 +28,7 @@ const AppWrapper = styled.div`
   width: 100%;
 `;
 
-export default function App() {
+function App({ existingHistory }) {
   return (
     <AppWrapper>
       <Helmet
@@ -40,14 +40,21 @@ export default function App() {
 
       <ToastContainer hideProgressBar closeButton={<CloseToaster />} />
 
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route path="/features" component={FeaturePage} />
-        <Route path="" component={NotFoundPage} />
-      </Switch>
+      <HashRouter basename="/salve-a-quebrada" history={existingHistory}>
+        <Switch>
+          <Route exact path="/" component={withRouter(HomePage)} />
+          <Route path="" component={withRouter(NotFoundPage)} />
+        </Switch>
+      </HashRouter>
 
       <Footer />
       <GlobalStyle />
     </AppWrapper>
   );
 }
+
+App.propTypes = {
+  existingHistory: PropTypes.object,
+};
+
+export default App;

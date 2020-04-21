@@ -11,7 +11,7 @@
     "node": ">=8.15.1"
   },
   "author": "Iorrah Mota",
-  "homepage": "https://iorrah.github.io/salve-a-quebrada",
+  "homepage": "/salve-a-quebrada/",
   "license": "MIT",
   "scripts": {
     "analyze:clean": "rimraf stats.json",
@@ -23,7 +23,7 @@
     "prebuild": "npm run build:clean",
     "build": "cross-env NODE_ENV=production webpack --config internals/webpack/webpack.prod.babel.js --color -p --progress --hide-modules --display-optimization-bailout",
     "build:clean": "rimraf ./build",
-    "predeploy": "npm run build",
+    "predeploy": "PUBLIC_PATH='/salve-a-quebrada/' npm run build",
     "deploy": "gh-pages -d build",
     "start": "cross-env NODE_ENV=development node server",
     "start:tunnel": "cross-env NODE_ENV=development ENABLE_TUNNEL=true node server",
