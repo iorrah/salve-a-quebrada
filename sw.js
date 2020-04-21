@@ -2,23 +2,12 @@ var __wpo = {
   "assets": {
     "main": [
       "./b7c9e1e479de3b53f1e4e30ebac2403a.woff",
-      "./74904e4a81efd8d57f981eda098bc465.png",
-      "./e81da1d46f42eb6e0167638f7b8cbe5b.png",
       "./ced611daf7709cc778da928fec876475.eot",
       "./d41f55a78e6f49a5512878df1737e58a.ttf",
-      "./4a93a1a209c310eed0f0f1ac4bbbe0ff.png",
-      "./c26192a1a18041f825d3a20adee1361e.png",
-      "./06443eb39a2b19414d6f39174bcb7d23.png",
-      "./5213eb6bb84fcc4549e700b85379b146.png",
-      "./3064fc145c4a7429faa41a85f2aa7804.png",
-      "./a127fb0cff7b42a3cebb89dfdb3fea53.png",
       "./favicon.ico",
       "./0597bd4894ca9063d093eb2c1a2e3a4e.png",
-      "./1473361f0320627076e31a8c67d0e14b.png",
-      "./c8f4c6506e10d724856c0e7e582af193.png",
-      "./9d7bcc930ffd1be7448d614f8f737e6d.png",
-      "./runtime.55d6b025048b282ce99e.js",
-      "./main.9d363e04ab41dcac1788.chunk.js.LICENSE.txt",
+      "./runtime.b1838479103948d59b3e.js",
+      "./main.e5dbd4202319d7180d7e.chunk.js.LICENSE.txt",
       "./"
     ],
     "additional": [
@@ -26,64 +15,49 @@ var __wpo = {
       "./npm.css-loader.8f60f746e9c62fd55421.chunk.js",
       "./npm.redux-saga.49e36373cb2d113df803.chunk.js",
       "./npm.webpack.ad6f4021e78565dadbe7.chunk.js",
-      "./4.5536071a4303f0c40771.chunk.js",
-      "./main.9d363e04ab41dcac1788.chunk.js",
-      "./npm.babel.83521832766e6492de27.chunk.js",
-      "./npm.connected-react-router.0b20743a7e5942e1a567.chunk.js",
-      "./npm.lodash.dee27cb49afb745da7e5.chunk.js",
-      "./npm.react-app-polyfill.7208c0e2e7ee3e71376f.chunk.js",
-      "./npm.react-redux.bf95c304a5dc065f60d5.chunk.js",
-      "./npm.react-toastify.8912dd18b866bb622b7b.chunk.js",
-      "./npm.react-transition-group.9f95e3b5020ca87b804a.chunk.js",
-      "./14.a774065808c02852f3b4.chunk.js",
-      "./15.5d99305a3fe561280238.chunk.js",
-      "./16.104fc3cdf6dabec1e1d2.chunk.js",
-      "./17.9591edca4bdddb0690ca.chunk.js"
+      "./main.e5dbd4202319d7180d7e.chunk.js",
+      "./npm.babel.524524bcea475bf42ad6.chunk.js",
+      "./npm.connected-react-router.bf0b95778a4baa99b4c5.chunk.js",
+      "./npm.lodash.d1032c6eae05b1256830.chunk.js",
+      "./npm.react-app-polyfill.9e0aa9a585ca3dfbd697.chunk.js",
+      "./npm.react-redux.f9a47373bf5507c04527.chunk.js",
+      "./npm.react-toastify.96d5c3d033145653ed76.chunk.js",
+      "./npm.react-transition-group.f82a127e54d20387c537.chunk.js",
+      "./13.7524c9da91571f960f59.chunk.js",
+      "./14.5e15109ea6fcf74acfd0.chunk.js",
+      "./15.9629b3d19d4ab8f2dedb.chunk.js"
     ],
     "optional": []
   },
   "externals": [],
   "hashesMap": {
     "af91c12f0f406a4f801aeb3b398768fe41d8f864": "./b7c9e1e479de3b53f1e4e30ebac2403a.woff",
-    "01d0c15be1b5c6043c16a0ff4ec4f79d8cbbc631": "./74904e4a81efd8d57f981eda098bc465.png",
-    "9a81bd0380bd5b50df79071afed30317bff733a6": "./e81da1d46f42eb6e0167638f7b8cbe5b.png",
     "2dff0768f4c0a53228761eab917e2c65556042d4": "./ced611daf7709cc778da928fec876475.eot",
     "3331eebdd4ba348ef25abe00c39ffbe867d46575": "./d41f55a78e6f49a5512878df1737e58a.ttf",
-    "55daa681eccb55f8a37d9c219df81f32a011f15a": "./4a93a1a209c310eed0f0f1ac4bbbe0ff.png",
-    "daf159a497132a74557f84cfeb539482f6ad4e8a": "./c26192a1a18041f825d3a20adee1361e.png",
-    "c66e3e1231167ce4ae750a3086d1b7c9450af173": "./06443eb39a2b19414d6f39174bcb7d23.png",
-    "ae509a038701d37f5bfc898f91d312f19ee02f9a": "./5213eb6bb84fcc4549e700b85379b146.png",
-    "aac4198de4249728682401b6d2bb3e93753fb3de": "./3064fc145c4a7429faa41a85f2aa7804.png",
-    "ea1414d0ecc2b55c898ccaff7a0754b569bebdbb": "./a127fb0cff7b42a3cebb89dfdb3fea53.png",
     "5e53ef208f3fa79a48f8374488f473c76e1233de": "./favicon.ico",
     "1a62d47c427a4e5dc295f11a44d031b68bcae288": "./0597bd4894ca9063d093eb2c1a2e3a4e.png",
-    "3f5aaad467f1b0ee4f5eb29ecadbe455267016a2": "./1473361f0320627076e31a8c67d0e14b.png",
-    "986d71e44160271adb64efb5af4d3dda70df6a88": "./c8f4c6506e10d724856c0e7e582af193.png",
-    "59f73331be3e03023696619494e75db742a20409": "./9d7bcc930ffd1be7448d614f8f737e6d.png",
     "c961fbf32d4e7bff3e3d2dee514ae5642ceeb4d0": "./npm.intl.7e497f38d1af6845608e.chunk.js",
     "fda938959a5bcb6b51135c44d541cd47abc9e910": "./npm.css-loader.8f60f746e9c62fd55421.chunk.js",
     "5eea83f5856b8f77dda17c74bedd31d51d08ff17": "./npm.redux-saga.49e36373cb2d113df803.chunk.js",
     "606bdc668802534e48ef14560ced198a1772d97a": "./npm.webpack.ad6f4021e78565dadbe7.chunk.js",
-    "ed6a323f928016db8ac4c9e0ece2aca68755f728": "./4.5536071a4303f0c40771.chunk.js",
-    "11761250ab79a05019d4f72edcffb48aaf766e30": "./main.9d363e04ab41dcac1788.chunk.js",
-    "05ab875f87111c169bf2b2aa24dc1d8b17fa8219": "./npm.babel.83521832766e6492de27.chunk.js",
-    "9c3ce57dfd9ecc3169ab4debe649399af0fd9e62": "./npm.connected-react-router.0b20743a7e5942e1a567.chunk.js",
-    "28830301939e4d16b7454b44fd62058bf3891f02": "./npm.lodash.dee27cb49afb745da7e5.chunk.js",
-    "906a9a3d44063f2c55288aaaeb4073f1688ca2a1": "./npm.react-app-polyfill.7208c0e2e7ee3e71376f.chunk.js",
-    "13d06bddff58520bb97d82a9b433c9cfadf6f9d8": "./npm.react-redux.bf95c304a5dc065f60d5.chunk.js",
-    "70f377e63d8255533bc6e0555719798528093ce4": "./npm.react-toastify.8912dd18b866bb622b7b.chunk.js",
-    "1bde6a9331fefe3874be736c3f70699a6a7e4257": "./npm.react-transition-group.9f95e3b5020ca87b804a.chunk.js",
-    "ec84f1d04ae2fcd71509818d18658d7c16a8e77b": "./runtime.55d6b025048b282ce99e.js",
-    "cb35ebf5e3fed75fef2c75b570ea831c0958ce4e": "./14.a774065808c02852f3b4.chunk.js",
-    "32bde2cfd55a0f9d748fa8967e2b39e6358f3ae1": "./15.5d99305a3fe561280238.chunk.js",
-    "7ce73fb7f7a0837765204753078127842d53d5ba": "./16.104fc3cdf6dabec1e1d2.chunk.js",
-    "73361e27c453f7b1dd0e0150c1885f3d324eeefa": "./17.9591edca4bdddb0690ca.chunk.js",
-    "a08192864711307478f30b2a169ede7fba97cce0": "./main.9d363e04ab41dcac1788.chunk.js.LICENSE.txt",
-    "1181c8334c4d9a72dff44f7b8314f4825bc74e26": "./"
+    "2dc552b8adcab7a67692837b5331e9f3209cdabc": "./main.e5dbd4202319d7180d7e.chunk.js",
+    "1d7ae6d3e6cd5d8eb6f21eb94e28ed23720ce8c7": "./npm.babel.524524bcea475bf42ad6.chunk.js",
+    "7ece45f0e1ec5694582d75cc665ef7535e40636f": "./npm.connected-react-router.bf0b95778a4baa99b4c5.chunk.js",
+    "baa0ee4cc9732cf3b758f6841f127812237ecb5e": "./npm.lodash.d1032c6eae05b1256830.chunk.js",
+    "fccf2f7b0b7ef751754129401b3187af0364326c": "./npm.react-app-polyfill.9e0aa9a585ca3dfbd697.chunk.js",
+    "57e31b205c8fd1a8cad40db118a489b266a1f192": "./npm.react-redux.f9a47373bf5507c04527.chunk.js",
+    "e5ec46febf098551eab920589fb5cec3ba47230b": "./npm.react-toastify.96d5c3d033145653ed76.chunk.js",
+    "163931f072b62078b0ddd4b04ad31f4e282675cd": "./npm.react-transition-group.f82a127e54d20387c537.chunk.js",
+    "12a957d885db5f1014bf595b69be549760c327c0": "./runtime.b1838479103948d59b3e.js",
+    "b09cd36cb6d2d163e21bd080f0bfd58207b083c7": "./13.7524c9da91571f960f59.chunk.js",
+    "648166fdecbdcb55188c5bb2d54dca995f63e303": "./14.5e15109ea6fcf74acfd0.chunk.js",
+    "528421186dfa176d103bd92bfc3a6101a2c8cae1": "./15.9629b3d19d4ab8f2dedb.chunk.js",
+    "a08192864711307478f30b2a169ede7fba97cce0": "./main.e5dbd4202319d7180d7e.chunk.js.LICENSE.txt",
+    "348639956eca8b51a7692c7309f80fb214afa863": "./"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "4/20/2020, 5:57:14 PM",
+  "version": "4/21/2020, 4:31:27 PM",
   "name": "webpack-offline",
   "pluginVersion": "5.0.6",
   "relativePaths": true
@@ -168,16 +142,16 @@ var __wpo = {
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/salve-a-quebrada";
+/******/ 	__webpack_require__.p = "/salve-a-quebrada/";
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "2cb4b5d6a53398bb909f");
+/******/ 	return __webpack_require__(__webpack_require__.s = "22249e1ea7baa06e7c1b");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "2cb4b5d6a53398bb909f":
+/***/ "22249e1ea7baa06e7c1b":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -963,7 +937,7 @@ cacheMaps: [
             return;
           }
 
-          return new URL("/salve-a-quebrada/", location);
+          return new URL("/", location);
         },
       to: null,
       requestTypes: ["navigate"],
