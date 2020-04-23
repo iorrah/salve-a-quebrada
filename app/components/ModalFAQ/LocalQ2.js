@@ -6,7 +6,7 @@ function LocalQ2() {
   const answer = (
     <span>
       O primeiro passo é verificar o seu provedor de loja online. Muitos
-      oferecem seus próprios recursos de cartão-presente (por exemplo,
+      oferecem seus próprios recursos de cartão-presente (por exemplo,{' '}
       <Link label="Wordpress" href="https://wordpress.com" />,{' '}
       <Link label="Magento" href="https://magento.com" />,{' '}
       <Link label="Wix" href="https://www.wix.com" />, etc.) e outros se
