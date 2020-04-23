@@ -7,6 +7,7 @@ import ChevronTop from 'images/chevron-top.svg';
 import Collapsable from './Collapsable';
 import Answer from './Answer';
 import Question from './Question';
+import Bold from './Bold';
 import Chevron from './Chevron';
 
 function Accordion(props) {
@@ -21,7 +22,14 @@ function Accordion(props) {
         <Chevron src={ChevronBottom} alt="Abrir" title="Abrir" />
       )}
 
-      <Question>{props.question}</Question>
+      <Question>
+        {answerOpened ? (
+          <Bold>{props.question}</Bold>
+        ) : (
+          <React.Fragment>{props.question}</React.Fragment>
+        )}
+      </Question>
+
       {answerOpened && <Answer>{props.answer}</Answer>}
     </Collapsable>
   );
