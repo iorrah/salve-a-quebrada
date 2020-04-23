@@ -13,7 +13,7 @@ function SupporterQ4() {
       lugares favoritos do meu bairro foi comprar vale-presentes pra quando eles
       abrirem de novo, eu poder voltar a tomar meus cafés favoritos ou comer o
       melhor sanduba da região. Salve a Quebrada é um projeto de código aberto e
-      voceê pode clonar e criar o seu se quiser, é só clicar{' '}
+      você pode clonar e criar o seu se quiser, é só clicar{' '}
       <Link label="aqui" href="https://github.com/iorrah/salve-a-quebrada" />.
     </span>
   );
