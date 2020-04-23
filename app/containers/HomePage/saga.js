@@ -1,5 +1,6 @@
 import { put, takeLatest, call } from 'redux-saga/effects';
 import request from 'utils/request';
+import { API_STORES } from 'utils/api';
 
 import {
   storesLoaded,
@@ -9,8 +10,6 @@ import {
 } from './actions';
 
 import { LOAD_STORES, ADD_STORE } from './constants';
-
-const API_STORES = 'http://localhost:8080/v1/stores';
 
 export function* getStores() {
   try {
