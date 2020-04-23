@@ -22,6 +22,7 @@ import Title from './Title';
 import SubTitle from './SubTitle';
 import InputWrapper from './InputWrapper';
 import NoWrap from './NoWrap';
+import Bold from './Bold';
 import MagnifyingIcon from './MagnifyingIcon';
 
 class Header extends React.Component {
@@ -126,12 +127,16 @@ class Header extends React.Component {
           <Content>
             <Title>
               Seu lugar favorito na cidade pode fechar pra sempre. Ajude a
-              salvá-lo.
+              salvá-lo!
             </Title>
 
             <SubTitle>
-              Doe um vale-presente pra impedir demissões e falências{' '}
-              <NoWrap>causadas pelo COVID-19</NoWrap>
+              Doe um vale-presente pra impedir demissões e falências de bares,
+              botecos, padarias, baladas, cafés e restaurantes da sua quebrada
+              por conta do{' '}
+              <NoWrap>
+                <Bold>COVID-19</Bold>
+              </NoWrap>
             </SubTitle>
 
             <InputWrapper>
