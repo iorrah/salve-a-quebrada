@@ -25,6 +25,10 @@ function Footer() {
         </div>
 
         <div>
+          <A href="https://github.com/iorrah/salve-a-quebrada" target="_blank">
+            GitHub
+          </A>
+
           <A href="#">Twitter</A>
           <A href="#">Instagram</A>
         </div>

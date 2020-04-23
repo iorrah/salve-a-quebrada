@@ -7,12 +7,14 @@ function SupporterQ4() {
     <span>
       Meu nome é Iorrah, eu moro em Berlim e sou apaixonado por bares, butecos,
       padarias, baladas, cafés e restaurantes locais onde moro. Inspirado pelo
-      projeto <Link label="SaveOurFaves" href="https://saveourfaves.org/" />{' '}
+      projeto <Link label="SaveOurFaves" href="https://saveourfaves.org" />{' '}
       criado em São Francisco nos EUA, eu decidi criar uma versão voltada para
       estabelecimentos do Brasil. Uma forma que eu encontrei de ajudar os meus
       lugares favoritos do meu bairro foi comprar vale-presentes pra quando eles
       abrirem de novo, eu poder voltar a tomar meus cafés favoritos ou comer o
-      melhor sanduba da região.
+      melhor sanduba da região. Salve a Quebrada é um projeto de código aberto e
+      voceê pode clonar e criar o seu se quiser, é só clicar{' '}
+      <Link label="aqui" href="https://github.com/iorrah/salve-a-quebrada" />.
     </span>
   );
 
