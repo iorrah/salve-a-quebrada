@@ -7,7 +7,8 @@ function SupporterQ2(props) {
   const answer = (
     <span>
       Para adicionar seus locais favoritos no site,{' '}
-      <Button onClick={props.handleOpenModalAddStore}>clique aqui</Button>.
+      <Button onClick={props.handleOpenModalAddStore}>clique aqui</Button> e
+      aguarde a aprovação do novo local.
     </span>
   );
 
