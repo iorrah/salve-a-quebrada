@@ -7,6 +7,7 @@ import Button from 'components/Button';
 
 import Container from './Container';
 import Content from './Content';
+import ImgWrapper from './ImgWrapper';
 import Img from './Img';
 import Details from './Details';
 import H3 from './H3';
@@ -23,7 +24,9 @@ function Store(props) {
   return (
     <Container className="col-md-6 col-lg-4">
       <Content>
-        <Img src={href} alt="Foto do Restaurante" />
+        <ImgWrapper>
+          <Img src={href} alt="Foto do Restaurante" />
+        </ImgWrapper>
 
         <Details>
           <H3>{store.name}</H3>
