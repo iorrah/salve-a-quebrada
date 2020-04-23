@@ -5,8 +5,8 @@ import Link from './Link';
 function SupporterQ4() {
   const answer = (
     <span>
-      Meu nome é Iorrah, eu moro em Berlim e sou apaixonado pelos pequenos cafés
-      e restaurantes locais onde moro. Inspirado pelo projeto{' '}
+      Meu nome é Iorrah, eu moro em Berlim e sou apaixonado pelos pequenos
+      cafés, bares e restaurantes locais onde moro. Inspirado pelo projeto{' '}
       <Link label="SaveOurFaves" href="https://saveourfaves.org/" /> criado em
       São Francisco nos EUA, eu decidi criar uma versão voltada para
       estabelecimentos do Brasil. Uma forma que eu encontrei de ajudar os meus
