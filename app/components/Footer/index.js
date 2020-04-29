@@ -35,9 +35,9 @@ function Footer() {
           <A
             href={emailLink}
             target="_blank"
-            title="Abrir seu serviço de E-mail"
+            title={`Abra ${email} no seu serviço de E-mail`}
           >
-            {email}
+            Email
           </A>
         </div>
       </Container>
