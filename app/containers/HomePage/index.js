@@ -21,6 +21,7 @@ import Modal from 'components/Modal';
 import ModalFAQ from 'components/ModalFAQ';
 import ModalStore from 'components/Modal/ModalStore';
 import Button from 'components/Button';
+import LoadingIndicator from 'components/LoadingIndicator';
 
 import Main from './Main';
 import Header from './Header';
@@ -152,7 +153,6 @@ export function HomePage({
         <Container>
           <Header>
             {error && <p>{error}</p>}
-            {loading && <p>Loading...</p>}
 
             <H2>
               Locais disponíveis: <Small>{stores.length}</Small>
@@ -162,9 +162,15 @@ export function HomePage({
           </Header>
 
           <Stores className="row">
-            {stores.map(store => (
-              <Store store={store} key={store.id} />
-            ))}
+            {loading ? (
+              <LoadingIndicator />
+            ) : (
+              <React.Fragment>
+                {stores.map(store => (
+                  <Store store={store} key={store.id} />
+                ))}
+              </React.Fragment>
+            )}
           </Stores>
 
           {/* <Button size="large" onClick={() => {}}>
