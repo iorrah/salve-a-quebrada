@@ -14,8 +14,7 @@ import Details from './Details';
 import H3 from './H3';
 import P from './P';
 
-function Store(props) {
-  const { store } = props;
+function Store({ store }) {
   let href = placeholder;
 
   if (store.image !== '' && store.image !== undefined) {
@@ -23,7 +22,7 @@ function Store(props) {
   }
 
   return (
-    <Container className="col-md-6 col-lg-4">
+    <Container className="col-md-6 col-lg-4" id={store.id}>
       <Content>
         <ImgWrapper>
           <Background src={href} alt="Imagem de fundo" />
