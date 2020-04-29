@@ -10,7 +10,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
-import { Route, withRouter, Switch } from 'react-router-dom';
+import { HashRouter, Route, withRouter, Switch } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -42,11 +42,13 @@ function App({ existingHistory }) {
 
       <ToastContainer hideProgressBar closeButton={<CloseToaster />} />
 
-      <Switch basename="/" history={existingHistory}>
-        <Route exact path="/" component={withRouter(HomePage)} />
-        <Route exact path="/terms" component={withRouter(Terms)} />
-        <Route path="" component={withRouter(NotFoundPage)} />
-      </Switch>
+      <HashRouter basename="/" history={existingHistory}>
+        <Switch>
+          <Route exact path="/" component={withRouter(HomePage)} />
+          <Route exact path="/terms" component={withRouter(Terms)} />
+          <Route path="" component={withRouter(NotFoundPage)} />
+        </Switch>
+      </HashRouter>
 
       <Footer />
       <GlobalStyle />
