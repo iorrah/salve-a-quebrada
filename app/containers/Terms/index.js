@@ -9,16 +9,13 @@ import Article from './Article';
 
 export default function Terms() {
   return (
-    <Article className="container">
+    <Article className="container terms__article">
       <Button type="primary" href="/">
         Voltar
       </Button>
 
       <H1>Termos de Uso</H1>
 
-      <p className="c1">
-        <span className="c0">Salve a Quebrada - Termos</span>
-      </p>
       <p className="c1 c2">
         <span className="c0" />
       </p>
