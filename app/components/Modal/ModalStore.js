@@ -54,7 +54,7 @@ function ModalStore(props) {
 
           <div className="modal__footer">
             <Button type="hollow" target="_blank" href={store.donation}>
-              Mais detalhes
+              Abrir no Yelp
             </Button>
           </div>
         </div>

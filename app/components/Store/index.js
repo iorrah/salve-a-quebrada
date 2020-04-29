@@ -37,7 +37,7 @@ function Store({ store }) {
           </div>
 
           <Button type="hollow" target="_blank" href={store.donation}>
-            Mais detalhes
+            Abrir no Yelp
           </Button>
         </Details>
       </Content>
