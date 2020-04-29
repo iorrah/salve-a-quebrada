@@ -21,6 +21,7 @@ import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import Footer from 'components/Footer';
 import CloseToaster from 'components/CloseToaster';
 
+import 'styles.scss';
 import GlobalStyle from '../../global-styles';
 
 const AppWrapper = styled.div`

@@ -7,8 +7,6 @@ import Button from 'components/Button';
 import Cross from 'images/cross.svg';
 import placeholder from 'images/placeholder.jpg';
 
-import 'styles.scss';
-
 import Details from './Details';
 import ImgWrapper from './ImgWrapper';
 import Img from './Img';

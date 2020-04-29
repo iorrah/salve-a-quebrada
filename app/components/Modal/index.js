@@ -4,8 +4,6 @@ import PropTypes from 'prop-types';
 import Button from 'components/Button';
 import Cross from 'images/cross.svg';
 
-import 'styles.scss';
-
 function Modal(props) {
   const inputName = useRef(null);
   const inputAddress = useRef(null);

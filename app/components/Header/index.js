@@ -5,8 +5,6 @@ import Autosuggest from 'react-autosuggest';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import 'styles.scss';
-
 import MagnifyingImage from 'images/magnifying.svg';
 import Button from 'components/Button';
 
