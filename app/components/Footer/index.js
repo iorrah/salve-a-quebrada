@@ -15,7 +15,7 @@ function Footer() {
     <FooterStyled>
       <Container className="container">
         <div>
-          <A href="#">Termos</A>
+          <A href="/terms">Termos</A>
           <A href="#">Privacidade</A>
         </div>
 

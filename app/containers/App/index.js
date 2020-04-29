@@ -15,6 +15,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import HomePage from 'containers/HomePage/Loadable';
+import Terms from 'containers/Terms/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 
 import Footer from 'components/Footer';
@@ -42,6 +43,7 @@ function App({ existingHistory }) {
 
       <Switch basename="/" history={existingHistory}>
         <Route exact path="/" component={withRouter(HomePage)} />
+        <Route exact path="/terms" component={withRouter(Terms)} />
         <Route path="" component={withRouter(NotFoundPage)} />
       </Switch>
 
