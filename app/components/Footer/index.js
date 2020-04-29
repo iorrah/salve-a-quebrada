@@ -16,7 +16,6 @@ function Footer() {
       <Container className="container">
         <div>
           <A href="/terms">Termos</A>
-          <A href="#">Privacidade</A>
         </div>
 
         <ToggleContainer>
