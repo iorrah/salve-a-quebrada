@@ -9,6 +9,7 @@ import placeholder from 'images/placeholder.jpg';
 import 'styles.scss';
 
 import Details from './Details';
+import ImgWrapper from './ImgWrapper';
 import Img from './Img';
 import H3 from './H3';
 import P from './P';
@@ -41,7 +42,9 @@ function ModalStore(props) {
           </div>
 
           <div className="modal__body modal__body--full">
-            <Img src={href} alt="Foto do Restaurante" />
+            <ImgWrapper>
+              <Img src={href} alt="Foto do Restaurante" />
+            </ImgWrapper>
 
             <Details>
               <H3>{store.name}</H3>
