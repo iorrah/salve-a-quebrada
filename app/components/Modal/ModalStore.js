@@ -54,7 +54,7 @@ function ModalStore(props) {
 
           <div className="modal__footer">
             <Button type="hollow" target="_blank" href={store.donation}>
-              Abrir Doações
+              Mais detalhes
             </Button>
           </div>
         </div>
