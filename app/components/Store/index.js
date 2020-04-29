@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { getCtaSuffix } from 'utils/content';
 import placeholder from 'images/placeholder.jpg';
 
 import Button from 'components/Button';
@@ -13,14 +14,6 @@ import Img from './Img';
 import Details from './Details';
 import H3 from './H3';
 import P from './P';
-
-const getCtaSuffix = url => {
-  if (url.toLowerCase().indexOf('yelp') >= 0) {
-    return 'no Yelp';
-  }
-
-  return 'Doações';
-};
 
 function Store({ store }) {
   let href = placeholder;
