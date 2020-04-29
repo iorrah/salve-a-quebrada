@@ -14,6 +14,14 @@ import Img from './Img';
 import H3 from './H3';
 import P from './P';
 
+const getCtaSuffix = url => {
+  if (url.toLowerCase().indexOf('yelp') >= 0) {
+    return 'no Yelp';
+  }
+
+  return 'Doações';
+};
+
 function ModalStore(props) {
   const { store } = props;
   let href = placeholder;
@@ -21,6 +29,8 @@ function ModalStore(props) {
   if (store.image !== '' && store.image !== undefined) {
     href = store.image;
   }
+
+  const ctaSuffix = getCtaSuffix(store.donation);
 
   return (
     <div className="modal__overlay">
@@ -54,7 +64,7 @@ function ModalStore(props) {
 
           <div className="modal__footer">
             <Button type="hollow" target="_blank" href={store.donation}>
-              Abrir no Yelp
+              Abrir {ctaSuffix}
             </Button>
           </div>
         </div>

@@ -14,12 +14,22 @@ import Details from './Details';
 import H3 from './H3';
 import P from './P';
 
+const getCtaSuffix = url => {
+  if (url.toLowerCase().indexOf('yelp') >= 0) {
+    return 'no Yelp';
+  }
+
+  return 'Doações';
+};
+
 function Store({ store }) {
   let href = placeholder;
 
   if (store.image !== '' && store.image !== undefined) {
     href = store.image;
   }
+
+  const ctaSuffix = getCtaSuffix(store.donation);
 
   return (
     <Container className="col-md-6 col-lg-4" id={store.id}>
@@ -37,7 +47,7 @@ function Store({ store }) {
           </div>
 
           <Button type="hollow" target="_blank" href={store.donation}>
-            Abrir no Yelp
+            Abrir {ctaSuffix}
           </Button>
         </Details>
       </Content>
