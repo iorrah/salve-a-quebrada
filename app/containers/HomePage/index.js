@@ -57,6 +57,7 @@ export function HomePage({
   const [address, setAddress] = useState('');
   const [link, setLink] = useState('');
   const [imageText, setImageText] = useState('');
+  const [showAllStores, setShowAllStores] = useState(false);
 
   const cleanDraftStore = () => {
     setName('');
@@ -135,6 +136,20 @@ export function HomePage({
     }
   };
 
+  const handleClickShowAllStores = () => {
+    setShowAllStores(true);
+  };
+
+  const getFilteredStores = allStores => {
+    if (showAllStores === true) {
+      return allStores;
+    }
+
+    return allStores.slice(0, 18);
+  };
+
+  const filteredStores = getFilteredStores(stores);
+
   return (
     <React.Fragment>
       <PageHeader
@@ -166,16 +181,18 @@ export function HomePage({
               <LoadingIndicator />
             ) : (
               <React.Fragment>
-                {stores.map(store => (
+                {filteredStores.map(store => (
                   <Store store={store} key={store.id} />
                 ))}
               </React.Fragment>
             )}
           </Stores>
 
-          {/* <Button size="large" onClick={() => {}}>
-            Carregar mais
-          </Button> */}
+          {!showAllStores && (
+            <Button size="large" onClick={handleClickShowAllStores}>
+              Carregar tudo ({stores.length} itens)
+            </Button>
+          )}
         </Container>
 
         {modalOpen === true && (
