@@ -1,7 +1,7 @@
 import { createBrowserHistory } from 'history';
 
 const history = createBrowserHistory({
-  basename: '/salve-a-quebrada',
+  basename: '/',
 });
 
 export default history;

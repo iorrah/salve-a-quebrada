@@ -40,7 +40,7 @@ function App({ existingHistory }) {
 
       <ToastContainer hideProgressBar closeButton={<CloseToaster />} />
 
-      <HashRouter basename="/salve-a-quebrada" history={existingHistory}>
+      <HashRouter basename="/" history={existingHistory}>
         <Switch>
           <Route exact path="/" component={withRouter(HomePage)} />
           <Route path="" component={withRouter(NotFoundPage)} />
