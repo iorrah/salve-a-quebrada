@@ -8,6 +8,7 @@ import Button from 'components/Button';
 import Container from './Container';
 import Content from './Content';
 import ImgWrapper from './ImgWrapper';
+import Background from './Background';
 import Img from './Img';
 import Details from './Details';
 import H3 from './H3';
@@ -25,6 +26,7 @@ function Store(props) {
     <Container className="col-md-6 col-lg-4">
       <Content>
         <ImgWrapper>
+          <Background src={href} alt="Imagem de fundo" />
           <Img src={href} alt="Foto do Restaurante" />
         </ImgWrapper>
 

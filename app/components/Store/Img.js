@@ -7,6 +7,7 @@ const Img = styled(NormalImg)`
   height: auto;
   margin: 0 auto;
   display: block;
+  position: relative;
 `;
 
 export default Img;

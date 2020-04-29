@@ -7,6 +7,7 @@ const ImgWrapper = styled.div`
   display: flex;
   height: auto;
   overflow: hidden;
+  position: relative;
 
   @media (min-width: 768px) {
     height: 330px;
