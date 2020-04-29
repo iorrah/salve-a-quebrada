@@ -8,6 +8,9 @@ import A from './A';
 import Copyright from './Copyright';
 
 function Footer() {
+  const email = 'oi@salveaquebrada.org';
+  const emailLink = `mailto:${email}`;
+
   return (
     <FooterStyled>
       <Container className="container">
@@ -29,8 +32,13 @@ function Footer() {
             GitHub
           </A>
 
-          <A href="#">Twitter</A>
-          <A href="#">Instagram</A>
+          <A
+            href={emailLink}
+            target="_blank"
+            title="Abrir seu serviço de E-mail"
+          >
+            {email}
+          </A>
         </div>
       </Container>
     </FooterStyled>
