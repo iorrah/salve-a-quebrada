@@ -1,0 +1,67 @@
+{
+  "icons": [
+    {
+      "src": "/icon_180x180.822079be853672d4ef43dc055be3eaf8.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_167x167.d8ef0f9ed5f0780142f24a9015725aca.png",
+      "sizes": "167x167",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_152x152.750e52231d2277ae3f5f9ad0cdb6de56.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_120x120.5e17a8ce53afb1682a147b1aa4f610b1.png",
+      "sizes": "120x120",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_512x512.68484d4552b3b9a826d317ac4376f4ce.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_384x384.873f492595b1562f4d2da9bf82b72b8d.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_192x192.1770d00d9945e7b1c7dca5c3c6b73e63.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_144x144.fba3437c26338780cf7b76e08ea09b0f.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_128x128.c67c3eb24dd8ce7daf4e761e1ad14e71.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_96x96.cc7ec2d82d0af4b9b9e493736049d9be.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_72x72.f6dbdcde7facf4b1e590d2f3166d48c1.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    }
+  ],
+  "name": "Salve a Quebrada",
+  "short_name": "SQ",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "Seu lugar favorito na cidade pode fechar pra sempre. Ajude a salvá-lo do COVID-19!",
+  "background_color": "#000",
+  "theme_color": "#fff"
+}

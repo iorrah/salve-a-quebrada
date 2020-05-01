@@ -2,10 +2,12 @@ var __wpo = {
   "assets": {
     "main": [
       "./b7c9e1e479de3b53f1e4e30ebac2403a.woff",
+      "./thumbnail-facebook.png",
       "./74904e4a81efd8d57f981eda098bc465.png",
       "./e81da1d46f42eb6e0167638f7b8cbe5b.png",
       "./ced611daf7709cc778da928fec876475.eot",
       "./d41f55a78e6f49a5512878df1737e58a.ttf",
+      "./thumbnail-twitter.png",
       "./4a93a1a209c310eed0f0f1ac4bbbe0ff.png",
       "./c26192a1a18041f825d3a20adee1361e.png",
       "./06443eb39a2b19414d6f39174bcb7d23.png",
@@ -19,7 +21,7 @@ var __wpo = {
       "./c8f4c6506e10d724856c0e7e582af193.png",
       "./9d7bcc930ffd1be7448d614f8f737e6d.png",
       "./runtime.897aecc82e93bca36604.js",
-      "./main.f81438cd62784eb01f07.chunk.js.LICENSE.txt",
+      "./main.381a8556856f55d2f1b9.chunk.js.LICENSE.txt",
       "./"
     ],
     "additional": [
@@ -28,7 +30,7 @@ var __wpo = {
       "./npm.redux-saga.49e36373cb2d113df803.chunk.js",
       "./npm.webpack.ad6f4021e78565dadbe7.chunk.js",
       "./4.8007ff20f5cbb840c03f.chunk.js",
-      "./main.f81438cd62784eb01f07.chunk.js",
+      "./main.381a8556856f55d2f1b9.chunk.js",
       "./npm.babel.83521832766e6492de27.chunk.js",
       "./npm.connected-react-router.0b20743a7e5942e1a567.chunk.js",
       "./npm.lodash.dee27cb49afb745da7e5.chunk.js",
@@ -46,10 +48,12 @@ var __wpo = {
   "externals": [],
   "hashesMap": {
     "af91c12f0f406a4f801aeb3b398768fe41d8f864": "./b7c9e1e479de3b53f1e4e30ebac2403a.woff",
+    "773992a8e5ab407d29a0f76edf0022359b6b60d0": "./thumbnail-facebook.png",
     "01d0c15be1b5c6043c16a0ff4ec4f79d8cbbc631": "./74904e4a81efd8d57f981eda098bc465.png",
     "9a81bd0380bd5b50df79071afed30317bff733a6": "./e81da1d46f42eb6e0167638f7b8cbe5b.png",
     "2dff0768f4c0a53228761eab917e2c65556042d4": "./ced611daf7709cc778da928fec876475.eot",
     "3331eebdd4ba348ef25abe00c39ffbe867d46575": "./d41f55a78e6f49a5512878df1737e58a.ttf",
+    "8b5385df4fd24ad340433e607968e5ddafa7e181": "./thumbnail-twitter.png",
     "55daa681eccb55f8a37d9c219df81f32a011f15a": "./4a93a1a209c310eed0f0f1ac4bbbe0ff.png",
     "daf159a497132a74557f84cfeb539482f6ad4e8a": "./c26192a1a18041f825d3a20adee1361e.png",
     "c66e3e1231167ce4ae750a3086d1b7c9450af173": "./06443eb39a2b19414d6f39174bcb7d23.png",
@@ -57,7 +61,7 @@ var __wpo = {
     "aac4198de4249728682401b6d2bb3e93753fb3de": "./3064fc145c4a7429faa41a85f2aa7804.png",
     "ea1414d0ecc2b55c898ccaff7a0754b569bebdbb": "./a127fb0cff7b42a3cebb89dfdb3fea53.png",
     "826b7eb02e8e948b5f3979c977693d1911a6d8be": "./81d6e805144ca782245b224b9690a21e.jpg",
-    "5e53ef208f3fa79a48f8374488f473c76e1233de": "./favicon.ico",
+    "2e73407170e0e3714446c2123972dcdec1728a47": "./favicon.ico",
     "1a62d47c427a4e5dc295f11a44d031b68bcae288": "./0597bd4894ca9063d093eb2c1a2e3a4e.png",
     "3f5aaad467f1b0ee4f5eb29ecadbe455267016a2": "./1473361f0320627076e31a8c67d0e14b.png",
     "986d71e44160271adb64efb5af4d3dda70df6a88": "./c8f4c6506e10d724856c0e7e582af193.png",
@@ -67,7 +71,7 @@ var __wpo = {
     "5eea83f5856b8f77dda17c74bedd31d51d08ff17": "./npm.redux-saga.49e36373cb2d113df803.chunk.js",
     "606bdc668802534e48ef14560ced198a1772d97a": "./npm.webpack.ad6f4021e78565dadbe7.chunk.js",
     "6d551c6915151a2f6324c0318aed4ed333f196bc": "./4.8007ff20f5cbb840c03f.chunk.js",
-    "22d7ab6da2eccd85b15c4de82f12ae3c3c0effae": "./main.f81438cd62784eb01f07.chunk.js",
+    "53e2420f45111ed6e809a40f7160814fcca5a857": "./main.381a8556856f55d2f1b9.chunk.js",
     "05ab875f87111c169bf2b2aa24dc1d8b17fa8219": "./npm.babel.83521832766e6492de27.chunk.js",
     "9c3ce57dfd9ecc3169ab4debe649399af0fd9e62": "./npm.connected-react-router.0b20743a7e5942e1a567.chunk.js",
     "28830301939e4d16b7454b44fd62058bf3891f02": "./npm.lodash.dee27cb49afb745da7e5.chunk.js",
@@ -80,12 +84,12 @@ var __wpo = {
     "2d701663579c1a0c4639a7783ccba1b5995dd4cd": "./15.a1ed3d5eb42305b5663a.chunk.js",
     "b0ee16e5ef65ff2ad30c30ad0f217ee1c395f220": "./16.9aea40a1b8c94caa8e5d.chunk.js",
     "73361e27c453f7b1dd0e0150c1885f3d324eeefa": "./17.9591edca4bdddb0690ca.chunk.js",
-    "a08192864711307478f30b2a169ede7fba97cce0": "./main.f81438cd62784eb01f07.chunk.js.LICENSE.txt",
-    "1c109056f217ceb5e8398eb607b2a502587dda6d": "./"
+    "a08192864711307478f30b2a169ede7fba97cce0": "./main.381a8556856f55d2f1b9.chunk.js.LICENSE.txt",
+    "3ef8024b5d85647d2498a2375dc7a9907f48e7ee": "./"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "5/1/2020, 12:53:22 PM",
+  "version": "5/1/2020, 1:33:36 PM",
   "name": "webpack-offline",
   "pluginVersion": "5.0.6",
   "relativePaths": true
