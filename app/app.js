@@ -25,6 +25,8 @@ import LanguageProvider from 'containers/LanguageProvider';
 
 // Load the favicon and the .htaccess file
 import '!file-loader?name=[name].[ext]!./images/favicon.ico';
+import '!file-loader?name=[name].[ext]!./images/thumbnail-facebook.png';
+import '!file-loader?name=[name].[ext]!./images/thumbnail-twitter.png';
 import 'file-loader?name=.htaccess!./.htaccess'; // eslint-disable-line import/extensions
 
 import configureStore from './configureStore';
