@@ -168,32 +168,39 @@ export function HomePage({
         </Helmet>
 
         <Container>
-          <Header>
-            {error && <p>{error}</p>}
+          {error ? (
+            <p>
+              Opa... alguma coisa deu muito errado mas tá tudo bem, a culpa não
+              é sua. Já tem alguém resolvendo essa treta. Volta daqui a pouco :D
+            </p>
+          ) : (
+            <React.Fragment>
+              {loading ? (
+                <LoadingIndicator />
+              ) : (
+                <React.Fragment>
+                  <Header>
+                    <H2>
+                      Locais disponíveis: <Small>{stores.length}</Small>
+                    </H2>
 
-            <H2>
-              Locais disponíveis: <Small>{stores.length}</Small>
-            </H2>
+                    <Button onClick={handleOpenModal}>Adicionar Local</Button>
+                  </Header>
 
-            <Button onClick={handleOpenModal}>Adicionar Local</Button>
-          </Header>
+                  <Stores className="row">
+                    {filteredStores.map(store => (
+                      <Store store={store} key={store.id} />
+                    ))}
+                  </Stores>
 
-          <Stores className="row">
-            {loading ? (
-              <LoadingIndicator />
-            ) : (
-              <React.Fragment>
-                {filteredStores.map(store => (
-                  <Store store={store} key={store.id} />
-                ))}
-              </React.Fragment>
-            )}
-          </Stores>
-
-          {!showAllStores && (
-            <Button size="large" onClick={handleClickShowAllStores}>
-              Carregar tudo ({stores.length} itens)
-            </Button>
+                  {!showAllStores && (
+                    <Button size="large" onClick={handleClickShowAllStores}>
+                      Carregar tudo ({stores.length} itens)
+                    </Button>
+                  )}
+                </React.Fragment>
+              )}
+            </React.Fragment>
           )}
         </Container>
 
