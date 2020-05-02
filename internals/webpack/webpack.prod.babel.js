@@ -146,7 +146,7 @@ module.exports = require('./webpack.base.babel')({
 
   performance: {
     assetFilter: assetFilename =>
-      !/(\.map$)|(^(main\.|favicon\.|thumbnail-facebook\.|thumbnail-twitter\.))/.test(
+      !/(\.map$)|(^(main\.|favicon\.|thumbnail-facebook\.|thumbnail-twitter\.|CNAME\.))/.test(
         assetFilename,
       ),
   },
