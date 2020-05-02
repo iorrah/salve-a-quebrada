@@ -15,7 +15,7 @@ function Footer() {
     <FooterStyled>
       <Container className="container">
         <div>
-          <A href="/terms">Termos</A>
+          <A href="#/termos-de-uso">Termos de Uso</A>
         </div>
 
         <ToggleContainer>

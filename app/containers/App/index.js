@@ -45,7 +45,7 @@ function App({ existingHistory }) {
       <HashRouter basename="/" history={existingHistory}>
         <Switch>
           <Route exact path="/" component={withRouter(HomePage)} />
-          <Route exact path="/terms" component={withRouter(Terms)} />
+          <Route exact path="/termos-de-uso" component={withRouter(Terms)} />
           <Route path="" component={withRouter(NotFoundPage)} />
         </Switch>
       </HashRouter>
