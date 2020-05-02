@@ -9,4 +9,16 @@ const makeSelectStores = () =>
     homeState => homeState.stores,
   );
 
-export { selectHome, makeSelectStores };
+const makeSelectLoading = () =>
+  createSelector(
+    selectHome,
+    homeState => homeState.loading,
+  );
+
+const makeSelectError = () =>
+  createSelector(
+    selectHome,
+    homeState => homeState.error,
+  );
+
+export { selectHome, makeSelectStores, makeSelectLoading, makeSelectError };

@@ -11,8 +11,6 @@ import 'static/bootstrap-grid.css';
 import { useInjectReducer } from 'utils/injectReducer';
 import { useInjectSaga } from 'utils/injectSaga';
 
-import { makeSelectLoading, makeSelectError } from 'containers/App/selectors';
-
 import PageHeader from 'components/Header';
 import H2 from 'components/H2';
 import Container from 'components/Container';
@@ -29,7 +27,11 @@ import Stores from './Stores';
 import Small from './Small';
 
 import { loadStores, addStore } from './actions';
-import { makeSelectStores } from './selectors';
+import {
+  makeSelectStores,
+  makeSelectLoading,
+  makeSelectError,
+} from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 
