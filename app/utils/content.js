@@ -35,7 +35,7 @@ const getCtaSuffix = url => {
     return 'no Apoia-se';
   }
 
-  return 'Doações';
+  return 'Website';
 };
 
 export { getCtaSuffix };
