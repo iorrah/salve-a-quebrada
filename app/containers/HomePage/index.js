@@ -25,6 +25,7 @@ import Main from './Main';
 import Header from './Header';
 import Stores from './Stores';
 import Small from './Small';
+import ErrorBox from './ErrorBox';
 
 import { loadStores, addStore } from './actions';
 import {
@@ -169,10 +170,11 @@ export function HomePage({
 
         <Container>
           {error ? (
-            <p>
-              Opa... alguma coisa deu muito errado mas tá tudo bem, a culpa não
-              é sua. Já tem alguém resolvendo essa treta. Volta daqui a pouco :D
-            </p>
+            <ErrorBox>
+              <b>Opaaa...</b> alguma coisa deu muito errado mas tá tudo bem, a
+              culpa não é sua. Já tem alguém resolvendo essa treta. Volta daqui
+              a pouco :D
+            </ErrorBox>
           ) : (
             <React.Fragment>
               {loading ? (

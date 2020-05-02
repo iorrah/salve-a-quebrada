@@ -12,6 +12,7 @@ export const colors = {
   fog: '#f5f5f5',
   cloud: '#f7f7f7',
   white: 'white',
+  neon: '#f43f7d',
 };
 
 const GlobalStyle = createGlobalStyle`
