@@ -10,6 +10,8 @@ import {
 export function loadStores() {
   return {
     type: LOAD_STORES,
+    loading: true,
+    error: false,
   };
 }
 
@@ -17,6 +19,8 @@ export function storesLoaded(stores) {
   return {
     type: LOAD_STORES_SUCCESS,
     stores,
+    loading: false,
+    error: false,
   };
 }
 
@@ -24,6 +28,7 @@ export function storesLoadingError(error) {
   return {
     type: LOAD_STORES_ERROR,
     error,
+    loading: false,
   };
 }
 

@@ -11,6 +11,8 @@ import {
 
 export const initialState = {
   stores: [],
+  loading: true,
+  error: false,
 };
 
 /* eslint-disable default-case, no-param-reassign */
